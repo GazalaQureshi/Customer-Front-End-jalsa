@@ -1,0 +1,54 @@
+.rec-container{
+    margin-top:5rem;
+}
+
+.rec-con {
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    
+    
+}
+.rec {
+    box-shadow: 1px 2px 20px 5px rgb(214, 214, 226);
+    background-color: rgb(238, 232, 223);
+}
+.rec-img {
+    width:200px;
+}
+
+.rec-title {
+    margin:.2rem 0;
+    padding: 0;
+    font-size:1rem;
+}
+.rec-same {
+    margin:0;
+    margin-top:.2rem;
+    padding:0;
+    font-size:1rem;
+    font-weight: bold;
+}
+
+.vwall {
+    display:flex;
+    justify-content: space-between;
+}
+.vbtn {
+    padding:1rem 2.5rem;
+    align-self: center;
+    margin-right:4rem;
+    
+
+    font-size:1rem;
+    border-radius:10px;
+    border:none;
+    font-weight:bold;
+    background-color:black;
+    color:white;
+}
+.vbtn:hover{
+    background-color:rgb(218, 210, 214) ;
+    transition: all .3s linear;
+    color:black;
+}

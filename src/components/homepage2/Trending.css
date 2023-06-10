@@ -1,0 +1,123 @@
+.hp-trend-img {
+    height:550px;
+    width:450px;
+}
+.hp-trend-div{
+    width:450px;
+}
+@media screen and (max-width:1500px) {
+    .hp-trend-img {
+        height:500px;
+        width:400px;
+    }
+    .hp-trend-div{
+        width:400px;
+    }
+} 
+@media screen and (max-width:1300px) {
+    .hp-trend-img {
+        height:400px;
+        width:350px;
+    }
+    .hp-trend-div{
+        width:350px;
+    }
+}
+@media screen and (max-width:1150px) {
+    .hp-trend-img {
+        height:380px;
+        width:280px;
+    }
+    .hp-trend-div{
+        width:280px;
+    }
+}
+.hp-trend-default{
+    height:600px;
+}
+@media screen and (max-width:1500px) {
+    .hp-trend-default {
+        height:475px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .hp-trend-default {
+        height:425px;
+    }
+}
+
+
+.hp-trend-default-h2 {
+    margin-top: 0;
+    padding:3rem 0 0 2rem;
+    color:grey;
+    font-size: 1.5rem;
+}
+.hp-trend-default-h1 {
+    padding-left:2rem;
+    font-size:4rem;
+    margin-top:0;
+    width:400px;
+}
+
+.hp-trend-default-p2 {
+    padding-top:6rem;
+    padding-left:2rem;
+    font-size:2rem;
+}
+.hp-trend-default-p1 {
+    padding-left:2rem;
+    font-size:2rem;
+}
+
+
+@media screen and (max-width:1500px) {
+    .hp-trend-default-p2 {
+        padding-top:3.5rem;
+    } 
+    .hp-trend-default-h1 {
+        font-size:2.8rem;
+        width:80%;
+    }  
+}
+
+@media screen and (max-width:1200px) {
+    .hp-trend-default-h2 {
+        margin-top: 0;
+        padding:2rem 0 0 2rem;
+        color:grey;
+        font-size: 1.2rem;
+    }
+    .hp-trend-default-h1 {
+        font-size:3rem;
+    
+    }
+    .hp-trend-default-p2 {
+        padding-top:2.6rem;
+    }
+}
+/* 
+style={{ paddingLeft: "2rem", fontSize: "4rem", marginTop: "0", width: "400px" }}
+
+style={{ padding: "0rem 0 0 2rem", fontSize: "2.5rem" }}
+
+style={{ paddingTop: "5rem", paddingLeft: "2rem", fontSize: "2rem" }} */
+
+.vbtn {
+    padding:1rem 2.5rem;
+    align-self: center;
+    margin-right:4rem;
+    
+
+    font-size:1rem;
+    border-radius:10px;
+    border:none;
+    font-weight:bold;
+    background-color:black;
+    color:white;
+}
+.vbtn:hover{
+    background-color:rgb(218, 210, 214) ;
+    transition: all .3s linear;
+    color:black;
+}

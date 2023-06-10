@@ -1,0 +1,35 @@
+/* .hp-bestseller-img {
+    height:500px;
+    width:350px;
+}
+@media screen and (max-width:1500px) {
+    .hp-bestseller-img {
+        height:500px;
+        width:400px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .hp-bestseller-img {
+        height:400px; 
+        width:350px;
+    }
+}
+@media screen and (max-width:1150px) {
+    .hp-bestseller-img {
+        height:380px;
+        width:280px;
+    }
+}
+.hp-bestseller-default{
+    height:600px;
+}
+@media screen and (max-width:1500px) {
+    .hp-bestseller-default {
+        height:475px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .hp-bestseller-default {
+        height:425px;
+    }
+} */

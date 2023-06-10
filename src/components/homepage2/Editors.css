@@ -1,0 +1,48 @@
+.shop-now {
+    padding:1rem 2rem;
+    font-size:1rem;
+    border-radius:10px;
+    border:none;
+    font-weight:bold;
+    background-color:black;
+    color:white;
+}
+.shop-now:hover {
+    background-color:rgb(187, 180, 184) ;
+    transition: all .3s linear;
+    color:black;
+    
+}
+/* .ed-head{
+
+}
+.editor-all {
+    
+    
+}
+.flex-con{
+    display:flex;
+    
+}
+
+.editor-img {
+  
+    
+}
+
+.edti {
+   
+}
+.edt{
+ 
+} */
+
+.editor-item {
+    position:relative;
+    
+}
+.editor-content{
+    position: absolute;
+    top:80px;
+    left:30px;
+} 

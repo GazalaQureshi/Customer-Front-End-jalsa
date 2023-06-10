@@ -1,0 +1,315 @@
+.footer {
+
+    display: grid;
+    grid-template-columns: 30% 12% 18% 29%;
+    grid-column-gap: 4%;
+    margin-top: 3rem;
+    padding: 3rem 2rem;
+    background: black;
+    color: white;
+
+} 
+/* 
+.footer>div {
+    border: 2px solid rgb(213, 208, 208);
+} */
+
+
+.f1-fslogo {
+    width: 250px;
+}
+
+.f1-para {
+    font-size: 1.2rem;
+    word-spacing: .3rem;
+    padding-left: .8rem;
+
+}
+
+.f1-icons {
+    display: flex;
+    padding-left: 0;
+}
+
+.f1-ic {
+    margin: .3rem 1rem;
+    font-size: 1.4rem;
+    color: black;
+    background-color: white;
+    padding: .3rem;
+    border-radius: 50%;
+
+}
+
+.footer-heading {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.footer-list {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-left: 0;
+
+}
+
+.email-section {
+    display: flex;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.e-email {
+    position: absolute;
+    left: .3rem;
+    top: .3rem;
+    width: 50px;
+}
+
+.e-input {
+    padding: .8rem 1.8rem;
+    border: none;
+    border-bottom: 1.5px solid white;
+    padding-bottom: 1.2rem;
+    background: black;
+    color: white;
+    padding-left: 4rem;
+    font-size: 1rem;
+}
+
+.e-button {
+    padding: .6rem 1.5rem;
+    color: white;
+    background: blue;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-left: 1rem;
+    border: none;
+
+}
+
+.e-button:hover {
+    color: rgb(139, 139, 201);
+}
+
+.footer-pstore {
+    margin-right: 1.4rem;
+    width: 175px;
+}
+
+@media screen and (max-width:1500px) {
+
+    .footer {
+
+        display: grid;
+        grid-template-columns: 30% 12% 18% 29%;
+        grid-column-gap: 3%;
+        margin-top: 1rem;
+        padding: 3rem 2rem;
+        background: black;
+        color: white;
+
+    }
+
+    .footer-heading {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .footer-pstore {
+        width: 125px;
+    }
+
+    .e-email {
+        width: 40px;
+        top: .5rem;
+    }
+
+    .e-input {
+        padding: .8rem 1.4rem;
+        border: none;
+        border-bottom: 1.5px solid white;
+        padding-bottom: 1rem;
+        background: black;
+        color: white;
+        padding-left: 3rem;
+        font-size: 1rem;
+    }
+
+    .e-button {
+        padding: .4rem 1rem;
+        color: white;
+        background: blue;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 15px;
+        margin-left: 1rem;
+        border: none;
+
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .footer {
+
+        display: grid;
+        grid-template-columns: 25% 12% 18% 40%;
+        grid-column-gap: 2%;
+        margin-top: 3rem;
+        padding: 2rem 2rem 1.4rem 2rem;
+        background: black;
+        color: white;
+
+    }
+
+     .f1-fslogo {
+        width: 200px;
+    }
+
+    .f1-para {
+        font-size: 1rem;
+
+    }
+
+    .footer-list {
+        font-size: 1rem;
+        line-height: 1.8rem;
+
+    }
+    .footer-heading {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-pstore {
+        width: 125px;
+    }
+
+    .e-email {
+        width: 40px;
+        top: .2rem;
+    }
+
+    .e-input {
+        padding: .4rem .2rem;
+        border: none;
+        border-bottom: 1.2px solid white;
+        padding-bottom: 1rem;
+
+        padding-left: 3rem;
+        font-size: 1rem;
+    }
+
+    .e-button {
+        padding: .4rem 1rem;
+        color: white;
+        background: blue;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 15px;
+        margin-left: .2rem;
+        border: none;
+
+    }
+
+    .footer-heading {
+        font-size: 1.3rem;
+    }
+
+}
+@media screen and (max-width:992px) {
+    .footer {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .footer-heading {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    .footer-list {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        margin-top:0;
+
+    }
+
+  
+}
+
+@media screen and (max-width:550px) {
+    .footer {
+        margin-top:1.5rem;
+        padding: 1rem 1.4rem;
+    
+    } 
+    .footer-heading {
+        font-size: .95rem;
+        margin-bottom: 1rem;
+    }
+    .accordion-btn {
+        font-size:1.4rem !important;
+      }
+      .f1-para {
+        font-size: .8rem;
+        margin-top:0.2rem;
+    
+    }
+    .f1-fslogo {
+        width: 200px;
+      
+    }
+    .e-email {
+        width: 30px;
+        top: 0rem;
+    }
+
+    .e-input {
+        padding: .2rem .2rem;
+        padding-left: 2.5rem;
+        font-size: .8rem;
+    }
+
+    .e-button {
+        padding: .4rem 1rem;
+        color: white;
+        background: blue;
+        font-size: .8rem;
+        font-weight: bold;
+        border-radius: 8px;
+        margin-left: .3rem;
+        border: none;
+
+    }
+    .e-info {
+        font-size:.8rem !important;
+        width:90% !important;
+        margin-bottom: .8rem !important;
+        margin-top:0;
+    }
+    .footer-list {
+        font-size: .8rem;
+        line-height: 1.4rem;
+        margin-top:0;
+
+    }
+}
+
+
+  .accordion-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+    color:white;
+    font-size:2rem;
+  }
+  
+  .accordion-btn.open {
+    transform: rotate(180deg);
+  }
+

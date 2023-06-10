@@ -1,0 +1,13 @@
+ .sp-right-update{
+    padding:.9rem 2rem;
+    background:black;
+    color:rgb(242, 239, 239);
+    border:none;
+    border-radius:10px;
+    display:block;
+    margin:2rem auto;
+    font-size: 1.2rem;
+ }
+ .sp-right-update:hover{
+    background:blue;
+ } 

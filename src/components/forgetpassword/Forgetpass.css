@@ -1,0 +1,136 @@
+.forgetpass {
+    border:2px solid white;
+}
+
+.forgetpass-container{
+    width:350px;
+     
+    margin:0 auto;
+    border:1px solid rgb(141, 132, 132);
+    border-radius:10px;
+    text-align: center;
+    padding: 1.5rem;
+}
+.forgetpass-title {
+    font-size: 1.5rem;
+}
+.forgetpass-text {
+    width:300px;
+    margin:0 auto;
+    margin-bottom:1.2rem;
+    color:rgb(104, 96, 96); 
+}
+.forgetpass-input {
+    display:block;
+    width:300px;
+    padding:.8rem;
+    margin:.4rem auto;
+    border-radius:5px;
+    padding-left:1.3rem;
+    border:1px solid rgb(104, 96, 96);
+}
+
+.forgetpass-input-num {
+    
+    border:1px solid rgb(104, 96, 96);
+/*     
+    font-size: 2rem; */
+}
+.forgetpass-button{
+    width:180px;
+    height:40px;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    border-radius: 7px;
+    border:none;
+    margin-top:1rem;
+}
+.forgetpass-button:hover{
+    background: blue;
+}
+.forgetpass-hrs {
+    display:flex;
+    margin-left:.5rem;
+    
+    width:330px;
+}
+.forgetpass-hr {
+    width:100px;
+    height:0;
+    border-bottom:1px solid grey;
+    padding-left:3rem;   
+}
+.forgetpass-or {
+    
+    margin:auto 2rem;
+}
+
+
+@media screen and (max-width:550px) {
+    .forgetpass {
+        border:2px solid white;
+    }
+    
+    .forgetpass-container{
+        width:300px;
+        padding: 1rem;
+    }
+    .forgetpass-title {
+        font-size: 1.2rem;
+    }
+    .forgetpass-text {
+        width:90%;
+        margin-bottom:1rem;
+    }
+    .forgetpass-input {
+        display:block;
+        width:270px;
+        padding:.8rem;
+        margin:.4rem auto;
+        border-radius:5px;
+        padding-left:1rem;
+        border:1px solid rgb(104, 96, 96);
+    }
+    
+    .forgetpass-input-num {
+        
+        border:1px solid rgb(104, 96, 96);
+    /*     
+        font-size: 2rem; */
+    }
+    .forgetpass-button{
+        width:180px;
+        height:40px;
+        background-color: black;
+        color:white;
+        font-weight: bold;
+        border-radius: 7px;
+        border:none;
+        margin-top:1rem;
+        font-size: .8rem;
+    }
+    .forgetpass-button:hover{
+        background: blue;
+    }
+    .forgetpass-hrs {
+        display:flex;
+        margin-left:.5rem;
+        
+        width:280px;
+    }
+    .forgetpass-hr {
+        width:100px;
+        height:0;
+        border-bottom:1px solid grey;
+        padding-left:1rem;   
+    }
+    .forgetpass-or {
+        
+        margin:auto 1rem;
+    }   
+    .react-tel-input .form-control{
+        width:260px !important;
+        padding-left:1.6rem !important;
+    }
+}

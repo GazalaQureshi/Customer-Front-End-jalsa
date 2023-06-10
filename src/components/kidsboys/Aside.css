@@ -1,0 +1,8 @@
+.kg-sizes {
+    display:flex;
+    margin-bottom: 1rem;
+}
+.kg-s {
+    border:1px solid grey;
+    padding:5px 8px;
+}
