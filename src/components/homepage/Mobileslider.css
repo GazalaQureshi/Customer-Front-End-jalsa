@@ -1,10 +1,10 @@
-.slick-list {
+/* .slick-list {
     margin: 0 -15px;
   }
   
   .slick-list .slide-content {
     margin: 0 15px;
-  } 
+  }  */
   .slick-next:focus:before, .slick-next:hover:before, .slick-prev:focus:before, .slick-prev:hover:before {
     opacity: 0 !important;
     display:none !important;

@@ -45,6 +45,7 @@ import Personaldetails from './components/profile/Personaldetails';
 //useContext
 import Conpro from './context';
 import Profile from "./components/profile/Profile"
+import Notfound from './components/notfound/Notfound';
 
 
 
@@ -102,6 +103,13 @@ function App() {
         <Route path="/success-order" element={<Successorder/>} />
         <Route path="/profile-update" element={<Profileupdate/>} />
 
+        <Route path="/salwar-kameez" element={<Notfound/>} />
+        <Route path="/kurtis" element={<Notfound/>} />
+        <Route path="/pret" element={<Notfound/>} />
+        <Route path="/blouses" element={<Notfound/>} />
+        <Route path="/wedding" element={<Notfound/>} />
+        <Route path="/unstitched" element={<Notfound/>} />
+        <Route path="/sale" element={<Notfound/>} />
       </Routes>
       
       </Conpro>

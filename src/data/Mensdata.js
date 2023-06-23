@@ -1,14 +1,21 @@
  const mensData = [
     {
         id: 1,
-        img:"./fj_images/men/m1.jpg",
+        img: "./fj_images/men/m1.jpg",
         title:"kalki1",
         discription:"Silk Patola Kurta Suit",
         mrp:"1,500",
         sp:"1,000",
         star:4.5,
         review:"3,456", 
-        on:false
+        on:false,
+        imgarr:[
+            "./fj_images/men/m1.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+        ]
     },
     {
         id: 2,
@@ -19,7 +26,15 @@
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on:true
+        on:true,
+        imgarr:[
+            "./fj_images/men/m2.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+
+        ]
     },
     {
         id: 3,
@@ -30,7 +45,15 @@
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on:false
+        on:false,
+        imgarr:[
+            "./fj_images/men/m3.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+
+        ]
     },
     {
         id: 4,
@@ -41,18 +64,34 @@
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on:false
+        on:false,
+        imgarr:[
+            "./fj_images/men/m1.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+
+        ]
     },
     {
         id: 5,
         img: "./fj_images/men/m2.jpg",
-        title:"kalki5",
+        title:"kalki5", 
         discription:"Silk Patola Kurta Suit",
         mrp:"1,500",
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on:false
+        on:false,
+        imgarr:[
+            "./fj_images/men/m2.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+
+        ]
     },
     {
         id: 6,
@@ -63,7 +102,15 @@
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on:false
+        on:false,
+        imgarr:[
+            "./fj_images/men/m3.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+
+        ]
     },
     {
         id: 7,
@@ -74,7 +121,15 @@
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on:false
+        on:false,
+        imgarr:[
+            "./fj_images/men/m1.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+
+        ]
     },
     {
         id: 8,
@@ -85,7 +140,15 @@
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on:false
+        on:false,
+        imgarr:[
+            "./fj_images/men/m2.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+
+        ]
     },
     {
         id: 9,
@@ -96,7 +159,15 @@
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on:false
+        on:false,
+        imgarr:[
+            "./fj_images/men/m3.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+
+        ]
     },
     {
         id: 10,
@@ -107,7 +178,15 @@
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on:false
+        on:false,
+        imgarr:[
+            "./fj_images/men/m1.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+
+        ]
     },
     {
         id: 11,
@@ -118,7 +197,15 @@
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on:false
+        on:false,
+        imgarr:[
+            "./fj_images/men/m2.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+
+        ]
     },
     {
         id: 12,
@@ -129,7 +216,15 @@
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on:false
+        on:false, 
+        imgarr:[
+            "./fj_images/men/m3.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+
+        ]
     }
 ]
 

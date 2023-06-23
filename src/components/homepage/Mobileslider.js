@@ -82,7 +82,7 @@ const Mobileslider = () => {
        
       };
   return (
-    <div style={{marginTop:"2rem",padding:"1rem",marginLeft:".5rem",marginRight:".5rem"}}>
+    <div style={{marginTop:"2rem",marginLeft:".5rem",marginRight:".5rem"}}>
 
     
 <Slider {...settings} >

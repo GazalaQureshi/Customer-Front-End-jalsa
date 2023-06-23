@@ -8,7 +8,14 @@ const kbData = [
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on: false
+        on: false,
+        imgarr:[
+            "./fj_images/kids boy/1.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+        ]
     },
     {
         id: 2,
@@ -19,7 +26,14 @@ const kbData = [
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on: false
+        on: false,
+        imgarr:[
+            "./fj_images/kids boy/2.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+        ]
     },
     {
         id: 3,
@@ -30,7 +44,14 @@ const kbData = [
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on: false
+        on: false,
+        imgarr:[
+            "./fj_images/kids boy/3.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+        ]
     },
     {
         id: 4,
@@ -41,7 +62,14 @@ const kbData = [
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on: false
+        on: false,
+        imgarr:[
+            "./fj_images/kids boy/4.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+        ]
     },
     {
         id: 5,
@@ -52,7 +80,14 @@ const kbData = [
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on: false
+        on: false,
+        imgarr:[
+            "./fj_images/kids boy/1.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+        ]
     },
     {
         id: 6,
@@ -63,7 +98,14 @@ const kbData = [
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on: false
+        on: false,
+        imgarr:[
+            "./fj_images/kids boy/2.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+        ]
     },
     {
         id: 7,
@@ -74,7 +116,14 @@ const kbData = [
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on: false
+        on: false,
+        imgarr:[
+            "./fj_images/kids boy/3.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+        ]
     },
     {
         id: 8,
@@ -85,7 +134,14 @@ const kbData = [
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on: false
+        on: false,
+        imgarr:[
+            "./fj_images/kids boy/4.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+        ]
     },
     {
         id: 9,
@@ -96,7 +152,14 @@ const kbData = [
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on: false
+        on: false,
+        imgarr:[
+            "./fj_images/kids boy/1.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+        ]
     },
     {
         id: 10,
@@ -107,7 +170,14 @@ const kbData = [
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on: false
+        on: false,
+        imgarr:[
+            "./fj_images/kids boy/2.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+        ]
     },
     {
         id: 11,
@@ -118,7 +188,14 @@ const kbData = [
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on: false
+        on: false,
+        imgarr:[
+            "./fj_images/kids boy/3.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+        ]
     },
     {
         id: 12,
@@ -129,7 +206,14 @@ const kbData = [
         sp:"1,000",
         star:4.5,
         review:"3,456",
-        on: false
+        on: false,
+        imgarr:[
+            "./fj_images/kids boy/4.jpg",
+            "./fj_images/men/yellow-men2.jpg",
+            "./fj_images/men/yellow-men3.jpg",
+            "./fj_images/men/yellow-men4.jpg",
+            "./fj_images/men/yellow-men5.jpg", 
+        ]
     }
     
 ]

@@ -27,13 +27,13 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 1;
+
   top: -7px; 
   overflow:hidden;
 }
 
 .hp-main-title {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .hp-main-subtitle {
@@ -54,3 +54,4 @@
   }
 
 }
+

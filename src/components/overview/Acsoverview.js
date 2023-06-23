@@ -5,9 +5,10 @@ import "./overview.css";
 import {
   AiFillStar,
   AiOutlineHeart,
-  AiOutlineMinus,
+  AiOutlineMinus, 
   AiOutlinePlus,
-} from "react-icons/ai";
+  AiFillHeart
+} from "react-icons/ai";  
 import {
   BsBoxSeam,
   BsChevronDown,
@@ -30,6 +31,7 @@ import Comments from "./Comments";
 import { useEffect } from "react";
 import Similarproducts from "./accessories_similar_recently/Similarproducts";
 import Recentlyviewed from "./accessories_similar_recently/Recentlyviewed";
+import Slider from "react-slick";
 
 const Acsoverview = () => {
   const { id } = useParams();
@@ -55,48 +57,180 @@ const Acsoverview = () => {
   //counter
   const [count, setCount] = useState(0);
 
+  const selectedMenData = acsdata.find((singlemen) => singlemen.id === Number(id));
+  const { img } = selectedMenData;
+
+  const [mainImage, setMainImage] = useState(`.${img}`);
+
+  const handleImageClick = (newImage) => {
+    setMainImage(`.${newImage}`);
+  };
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerPadding: '1rem',
+
+  };
+  const settings2 = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerPadding: '1rem',
+    dots:true
+
+  };
+
+  const [showsection, setShowsection] = useState(true);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 992) {
+        setShowsection(false);
+
+      } else {
+        setShowsection(true);
+      }
+    };
+
+    handleResize(); // Check on initial render
+
+    window.addEventListener('resize', handleResize); // Listen for window resize events
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const reviewData = [
+    { stars: 4, progress: 80, totalStars: 750 },
+    { stars: 4, progress: 65, totalStars: 65 },
+    { stars: 3, progress: 50, totalStars: 55 },
+    { stars: 2, progress: 35, totalStars: 7 },
+    { stars: 1, progress: 20, totalStars: 0 },
+    // Add more review data as needed
+  ];
+  const renderReviews = () => {
+    return reviewData.map((review, index) => {
+      const { stars, progress, totalStars } = review;
+      const starElements = [];
+      const filledStarColor = 'blue';
+      const emptyStarColor = 'rgb(235, 232, 232)';
+
+      for (let i = 0; i < 5; i++) {
+        const starColor = i < stars ? filledStarColor : emptyStarColor;
+        starElements.push(
+          <AiFillStar
+            key={`star-${index}-${i}`}
+            className="heart-icon review-star"
+            color={starColor}
+            style={{ marginRight: '.4rem' }}
+          />
+        );
+      }
+
+      return (
+        <div key={`review-${index}`} className="ov-reviews-2s">
+          {window.innerWidth > 768 && (
+            <p style={{ marginTop: '0', marginBottom: '0', display: 'flex' }}>
+              {starElements}
+            </p>
+          )}
+          <div
+            className="review-line"
+            style={{
+              background: 'rgb(235, 232, 232)',
+              width: '300px',
+              height: '7px',
+              borderRadius: '10px',
+              marginLeft: '.7rem',
+              marginRight: '.8rem',
+            }}
+          >
+            <div
+              style={{
+                background: 'blue',
+                width: `${progress}%`,
+                height: '7px',
+                borderRadius: '10px',
+              }}
+            ></div>
+          </div>
+          <p style={{ margin: '0' }} className="review-num">
+            {totalStars} stars
+          </p>
+        </div>
+      );
+    });
+  };
+ //////////////////////////change heart colour/////////////////////////
+ const [isLiked, setIsLiked] = useState(false);
+
+ const handleClick = () => {
+   setIsLiked(!isLiked);
+ };
+  ///////////////////////////////////change size background////////////////
+  const [selectedSize, setSelectedSize] = useState(null);
+
+  const handleSizeClick = (size) => {
+    setSelectedSize(size);}
+ 
   return (
     <>
       <div>
         {acsdata.map((singlemen) => {
           if (singlemen.id === Number(id)) {
-            const { img, id, discription, title, mrp, sp, review, star } =
+            const { img, id, discription, title, mrp, sp, review, star ,imgarr} =
               singlemen;
 
             return (
               <div key={id} className="ov-container">
                 <div className="ov-top">
-                  <div className="ov-top-left">
-                    <div className="ov-top-left-1">
-                    <img
-                      src={`.${img}`}
-                      alt="ovimg"
-                      style={{width:"100%",height:"100%",objectFit:"cover"}}
-                    />
-                    </div>
-                    <div className="ov-top-left-2">
-                      <img
-                        src={`.${img}`}
-                        alt="ovimg"
-                        className="ov-top-left-2i"
-                      />
-                      <img
-                        src={`.${img}`}
-                        alt="ovimg"
-                        className="ov-top-left-2i"
-                      />
-                      <img
-                        src={`.${img}`}
-                        alt="ovimg"
-                        className="ov-top-left-2i"
-                      />
-                      <img
-                        src={`.${img}`}
-                        alt="ovimg"
-                        className="ov-top-left-2i"
-                      />
-                    </div>
-                  </div>
+                {showsection ?
+                    <div className="ov-top-left">
+                      <div className="ov-top-left-1">
+                        <img
+                          src={mainImage}
+                          alt="ovimg1"
+                          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                        />
+                      </div>
+                      <div className="ov-top-left2" style={{ width: "100%" }}>
+
+
+                        <Slider {...settings}>
+                          {imgarr.map((image, index) => (
+                            <div style={{}} key={index} className={`ov-top-left-2i ${mainImage === `.${image}` ? 'selected' : ''}`}>
+                              <img style={{ width: "100%", height: "220px", objectFit: "cover", margin: "0 auto", borderRadius: "10px", transform: "scale(.8)" }}
+                                src={`.${image}`}
+                                alt={`ovimg${index + 2}`}
+                                onClick={() => handleImageClick(image)}
+                              />
+                            </div>
+                          ))}
+                        </Slider>
+                      </div>
+                    </div> :
+                    <div className="ov-top-left" >
+                     
+                      <Slider {...settings2}>
+                          {imgarr.map((image, index) => (
+                            <div className="ov-top-left-1" >
+                               <img style={{ width: '100%', height: '100%', objectFit: 'cover',transform:"scale(.9)",margin:"0 auto"}}
+                                src={`.${image}`}
+                                alt={`ovimg${index + 2}`}
+                                onClick={() => handleImageClick(image)}
+                              />
+                            </div>
+                          ))}
+                        </Slider>
+                      
+                      </div>
+                    }
                   <div className="ov-top-right">
                     <h4 className="ov-kalki">{title}</h4>
                     <p className="ov-discription">{discription}</p>
@@ -134,18 +268,43 @@ const Acsoverview = () => {
                     <div className="ov-checkbox">
                       <h2 className="ov-check-title">SIZE</h2>
                       <div className="ov-kg-sizes">
-                        <div className="ov-kg-s">XS</div>
-                        <div className="ov-kg-s">S</div>
-                        <div className="ov-kg-s">M</div>
-                        <div className="ov-kg-s">L</div>
-                        <div className="ov-kg-s">XL</div>
-                      </div>
+      <div
+        className={`ov-kg-s ${selectedSize === 'XS' ? 'selected-size' : ''}`}
+        onClick={() => handleSizeClick('XS')}
+      >
+        XS
+      </div>
+      <div
+        className={`ov-kg-s ${selectedSize === 'S' ? 'selected-size' : ''}`}
+        onClick={() => handleSizeClick('S')}
+      >
+        S
+      </div>
+      <div
+        className={`ov-kg-s ${selectedSize === 'M' ? 'selected-size' : ''}`}
+        onClick={() => handleSizeClick('M')}
+      >
+        M
+      </div>
+      <div
+        className={`ov-kg-s ${selectedSize === 'L' ? 'selected-size' : ''}`}
+        onClick={() => handleSizeClick('L')}
+      >
+        L
+      </div>
+      <div
+        className={`ov-kg-s ${selectedSize === 'XL' ? 'selected-size' : ''}`}
+        onClick={() => handleSizeClick('XL')}
+      >
+        XL
+      </div>
+    </div>
                     </div>
                     <div>
                       <h2 className="ov-check-title">ADD ON'S</h2>
                       <div style={{display:"flex"}} >
-                      <input type="checkbox" id="mens-4" className="ov-box" />
-                      <label htmlFor="mens-4" className="ov-l">
+                      <input type="checkbox" id="mens-2" className="ov-box" />
+                      <label htmlFor="mens-2" className="ov-l">
                         Unstitched Fabric
                       </label>
                       <span className="ov-999" > ₹ 999</span>
@@ -236,7 +395,7 @@ const Acsoverview = () => {
                         <p className="ov-wishexplore-1p">
                           Add To Wishlist:
                         </p>
-                        <AiOutlineHeart color="blue" fontSize="2rem" />
+                        <p onClick={() =>handleClick()}>{isLiked ? <AiFillHeart color="blue" fontSize="2rem"/> : <AiOutlineHeart color="blue" fontSize="2rem" />}</p>
                       </div>
                       <div className="ov-wishexplore-1">
                         <p className="ov-wishexplore-1p">
@@ -362,11 +521,7 @@ const Acsoverview = () => {
 
                   <div className="ov-discription">
                     <h2 className="ov-titles"
-                      style={{
-                        
-                        marginBottom: "2.5rem",
-                        marginTop: "3rem",
-                      }}
+                     
                     >
                       Details and Product Description
                     </h2>
@@ -505,266 +660,8 @@ const Acsoverview = () => {
                           />
                         </p>
                       </div> 
-                      
-                      <div className="ov-reviews-2">
-                        <div className="ov-reviews-2s">
-                        {
-                          window.innerWidth > 768 ?
-                        
-                          <p style={{ marginTop: "0", marginBottom: "0" ,display:"flex"}}>
-                          <AiFillStar className="heart-icon review-star"
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            />
-                            <AiFillStar className="heart-icon review-star"
-                              color="rgb(235, 232, 232)"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            />
-                          </p>
-                          :" " }
-                          <div className="review-line"
-                            style={{
-                              background: "rgb(235, 232, 232)",
-                            width:"300px",
-                              height: "7px",
-                              borderRadius: "10px",
-                              marginLeft: ".7rem",
-                              marginRight: ".8rem",
-                            }}
-                          >
-                            <div
-                              style={{
-                                background: "blue",
-                                width: "80%",
-                                height: "7px",
-                                borderRadius: "10px",
-                              }}
-                            ></div>
-                          </div>
-                          
-                          <p style={{ margin: "0" }} className="review-num">
-                            750 stars
-                          </p>
-                        </div>
-                        <div className="ov-reviews-2s">
-                        {
-                          window.innerWidth > 768 ? 
-                        
-                          <p style={{ marginTop: "0", marginBottom: "0"    ,display:"flex"}}>
-                          <AiFillStar className="heart-icon review-star"
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            />
-                            <AiFillStar className="heart-icon review-star"
-                              color="rgb(235, 232, 232)"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            />
-                          </p> : "" }
-                          <div className="review-line"
-                            style={{
-                              background: "rgb(235, 232, 232)",
-                              width: "300px",
-                              height: "7px",
-                              borderRadius: "10px",
-                              marginLeft: ".7rem",
-                              marginRight: ".8rem",
-                            }}
-                          >
-                            <div
-                              style={{
-                                background: "blue",
-                                width: "65%",
-                                height: "7px",
-                                borderRadius: "10px",
-                              }}
-                            ></div>
-                          </div>
-                          <p style={{  margin: "0" }} className="review-num">
-                            65 stars
-                          </p>
-                        </div>
-                        <div className="ov-reviews-2s">
-                        {
-                          window.innerWidth >768 ? 
-                        
-                          <p style={{ marginTop: "0", marginBottom: "0" ,display:"flex"}}>
-                          <AiFillStar className="heart-icon review-star"
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="rgb(235, 232, 232)"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            />
-                            <AiFillStar className="heart-icon review-star"
-                              color="rgb(235, 232, 232)"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            />
-                          </p> : " " }
-                          <div className="review-line"
-                            style={{
-                              background: "rgb(235, 232, 232)",
-                              width: "300px",
-                              height: "7px",
-                              borderRadius: "10px",
-                              marginLeft: ".7rem",
-                              marginRight: ".8rem",
-                            }}
-                          >
-                            <div
-                              style={{
-                                background: "blue",
-                                width: "50%",
-                                height: "7px",
-                                borderRadius: "10px",
-                              }}
-                            ></div>
-                          </div>
-                          <p style={{  margin: "0" }} className="review-num">
-                            55 stars
-                          </p>
-                        </div>
-                        <div className="ov-reviews-2s">
-                        {
-                          window.innerWidth >768 ? 
-                        
-                          <p style={{ marginTop: "0", marginBottom: "0",display:"flex" }}>
-                          <AiFillStar className="heart-icon review-star "
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="rgb(235, 232, 232)"
-                              
-                              style={{ marginRight: ".4rem" }} 
-                            /><AiFillStar className="heart-icon review-star"
-                              color="rgb(235, 232, 232)"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            />
-                            <AiFillStar className="heart-icon review-star"
-                              color="rgb(235, 232, 232)"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            />
-                          </p> :"" }
-                          <div className="review-line"
-                            style={{
-                              background: "rgb(235, 232, 232)",
-                              width: "300px",
-                              height: "7px",
-                              borderRadius: "10px",
-                              marginLeft: ".7rem",
-                              marginRight: ".8rem",
-                            }}
-                          >
-                            <div
-                              style={{
-                                background: "blue",
-                                width: "35%",
-                                height: "7px",
-                                borderRadius: "10px",
-                              }}
-                            ></div>
-                          </div>
-                          <p style={{  margin: "0" }} className="review-num">
-                            7 stars
-                          </p>
-                        </div>
-                        <div className="ov-reviews-2s"> {
-                          window.innerWidth > 768 ? 
-                        
-                          <p style={{ marginTop: "0", marginBottom: "0" ,display:"flex"}}>
-                          <AiFillStar className="heart-icon review-star"
-                              color="blue"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="rgb(235, 232, 232)"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="rgb(235, 232, 232)"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            /><AiFillStar className="heart-icon review-star"
-                              color="rgb(235, 232, 232)"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            />
-                            <AiFillStar className="heart-icon review-star"
-                              color="rgb(235, 232, 232)"
-                              
-                              style={{ marginRight: ".4rem" }}
-                            />
-                          </p> : "" }
-                          <div className="review-line"
-                            style={{
-                              background: "rgb(235, 232, 232)",
-                              width: "300px",
-                              height: "7px",
-                              borderRadius: "10px",
-                              marginLeft: ".7rem",
-                              marginRight: ".8rem",
-                            }}
-                          >
-                            <div
-                              style={{
-                                background: "blue",
-                                width: "20%",
-                                height: "7px",
-                                borderRadius: "10px",
-                              }}
-                            ></div>
-                          </div>
-                          <p  style={{ margin: "0" }} className="review-num"> 
-                            0 stars
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                      <div className="ov-reviews-2">{renderReviews()}</div>
+                     </div>
                   </div>
                   <div className="ov-comments">
                     <h2 className="ov-titles"
@@ -806,17 +703,17 @@ const Acsoverview = () => {
           return null;
         })}
       </div>
-      <div className="ov-smproducts" style={{marginLeft:"1.5rem",width:"90%",overflow:"hidden"}}>
+      <div className="ov-smproducts" style={{width:"100%",overflow:"hidden"}}>
         <h2 className="ov-titles"
-          style={{  marginBottom: "2rem", marginTop: "3rem" }}
+          style={{  marginBottom: "2rem", marginTop: "3rem" ,marginLeft:"1.5rem"}}
         >
           SIMILAR PRODUCTS
         </h2>
         <Similarproducts />
       </div>
-      <div className="ov-rviewed" style={{marginLeft:"1.5rem",width:"90%",overflow:"hidden"}}>
+      <div className="ov-rviewed" style={{width:"100%",overflow:"hidden"}}>
         <h2 className="ov-titles"
-          style={{  marginBottom: "2rem", marginTop: "3rem" }}
+          style={{  marginBottom: "2rem", marginTop: "3rem",marginLeft:"1.5rem" }}
         >
           RECENTLY VIEWED
         </h2>

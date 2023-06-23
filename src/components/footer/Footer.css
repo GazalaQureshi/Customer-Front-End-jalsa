@@ -4,7 +4,7 @@
     grid-template-columns: 30% 12% 18% 29%;
     grid-column-gap: 4%;
     margin-top: 3rem;
-    padding: 3rem 2rem;
+    padding: 1.8rem 2rem;
     background: black;
     color: white;
 
@@ -12,7 +12,7 @@
 /* 
 .footer>div {
     border: 2px solid rgb(213, 208, 208);
-} */
+} */ 
 
 
 .f1-fslogo {
@@ -106,7 +106,7 @@
         grid-template-columns: 30% 12% 18% 29%;
         grid-column-gap: 3%;
         margin-top: 1rem;
-        padding: 3rem 2rem;
+        padding: 1.4rem 2rem;
         background: black;
         color: white;
 
@@ -142,7 +142,7 @@
         background: blue;
         font-size: 1rem;
         font-weight: bold;
-        border-radius: 15px;
+        border-radius: 10px;
         margin-left: 1rem;
         border: none;
 
@@ -203,12 +203,12 @@
     }
 
     .e-button {
-        padding: .4rem 1rem;
+        padding: .4rem .8rem;
         color: white;
         background: blue;
         font-size: 1rem;
         font-weight: bold;
-        border-radius: 15px;
+        border-radius: 10px;
         margin-left: .2rem;
         border: none;
 
@@ -273,7 +273,7 @@
     }
 
     .e-button {
-        padding: .4rem 1rem;
+        padding: .3rem .7rem;
         color: white;
         background: blue;
         font-size: .8rem;

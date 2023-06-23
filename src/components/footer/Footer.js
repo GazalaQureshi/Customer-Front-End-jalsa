@@ -13,7 +13,7 @@ const Footer = () => {
   const [isOpensupport, setIsOpensupport] = useState(true);
   const [isOpenlinks, setIsOpenlinks] = useState(true);
   const [isOpen, setIsOpen] = useState(true);
-
+ 
   const toggleAccordionsupport = () => {
     setIsOpensupport(!isOpensupport);
   }
@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
       <div className="footer-2">
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <h2 className="footer-heading" style={{  marginBottom: '1rem' }}>
+          <h2 className="footer-heading" style={{  marginBottom:  `${window.innerWidth > 768 ? "0" : ".8rem"}` }}>
             Supports
           </h2>
           {
@@ -98,7 +98,7 @@ const Footer = () => {
       </div>
       <div className="footer-2">
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <h2 className="footer-heading" style={{  marginBottom: '1rem' }}>
+          <h2 className="footer-heading" style={{  marginBottom:  `${window.innerWidth > 768 ? "0" : ".8rem"}` }}>
             Links
           </h2>
           {
@@ -125,7 +125,7 @@ const Footer = () => {
 
       <div className="footer-4">
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <h2 className="footer-heading" style={{  marginBottom: "1rem" }}>New Arrivals | Discounts | Offers</h2>
+          <h2 className="footer-heading" style={{  marginBottom:  `${window.innerWidth > 768 ? "0" : ".8rem"}` }}>New Arrivals | Discounts | Offers</h2>
           {
             getDivWidth() && <button className={`accordion-btn ${isOpen ? 'open' : ''}`} onClick={toggleAccordion}>
               <FaAngleDown className={`arrow-icon ${isOpen ? 'rotate' : ''}`} />

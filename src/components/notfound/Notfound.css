@@ -1,0 +1,7 @@
+.nfound-btn{
+    background:black;
+    border:none;
+}
+.nfound-btn:hover{
+    background:blue;
+}

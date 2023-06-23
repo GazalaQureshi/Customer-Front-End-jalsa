@@ -67,19 +67,19 @@ const Recomended = () => {
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         }
       },
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
         }
       },
       {
         breakpoint: 9999,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 5,
         }
       },
       // Add more breakpoints and settings as needed
@@ -87,7 +87,8 @@ const Recomended = () => {
   };
 
   return (
-    <div style={{ padding: "0 2rem", }} >
+    <div style={{ padding: `${window.innerWidth > 768 ? "0 2rem" : "0 .7rem"}` }}>
+
       <div style={{ display: "flex", justifyContent: "space-between",alignItems:"center",marginTop:"1.2rem",marginBottom:"1rem"  }}>
         <h1  className='hp-title' style={{ }}>Recommended For You</h1>
         <button className="vbtn"><Link className="shop-btn-home-page" to="/trend" style={{ margin: "auto", width: "50%" ,color:"inherit",textDecoration:"none"}} >View All</Link></button>
@@ -96,14 +97,17 @@ const Recomended = () => {
         {
           data.map((single) => {
             const { img, title, subtitle } = single
-            return (
-              <div  style={{ border: "1px solid red", margin: 'auto',width:"100%",overflow:"hidden" }}>
-                <img src={img} className="" alt="trendimg" style={{ width: "90%", borderRadius: "0px", marginBottom: '', position: 'relative', zIndex: '-1' }} />
-                <div style={{ width: "90%", background: "rgb(240,240,240)", border: "1px solid rgb(240,240,240)" }}>
-                  <h1 className="recom-title" style={{ textAlign: "center", marginTop: ".5rem", width: '100%', marginBottom: ".2rem" }}>{title}</h1>
-                  <h2 className="recom-text" style={{ textAlign: "center", marginTop: ".2rem", marginBottom: ".6rem" }}>{subtitle}</h2>
+            return (<div>
+              <div style={{margin:`${window.innerWidth > 768 ? "0 .8rem" : "0 .3rem"}`}} >
+              <div >
+                <img  src={img} alt="trendimg" style={{ objectFit: "cover",width:"100%",height:"100%" }} />
+                </div>
+                <div style={{ width: "100%", background: "rgb(240,240,240)", borderTop: "1px solid rgb(240,240,240)" }}>
+                  <h1  className="recom-title" style={{ textAlign: "center", marginTop: ".5rem", width: '100%', marginBottom: ".2rem" }}>{title}</h1>
+                  <h2 className="recom-text" style={{ textAlign: "center", marginTop: ".2rem", paddingBottom: ".6rem" }}>{subtitle}</h2>
                 </div>
 
+              </div>
               </div>
             )
           })

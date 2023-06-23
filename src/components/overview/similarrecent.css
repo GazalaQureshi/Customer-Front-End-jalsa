@@ -1,0 +1,31 @@
+.sr-img-div{
+    height:450px;
+    
+}
+
+@media screen and (max-width:1250px) {
+    .sr-img-div{
+        height:350px;
+    }
+}
+@media screen and (max-width:992px) {
+    .sr-img-div{
+        height:400px;
+    }
+}
+@media screen and (max-width:768px) {
+    .sr-img-div{
+        height:320px;
+    }
+}
+@media screen and (max-width:640px) {
+    .sr-img-div{
+        height:400px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .sr-img-div{
+        height:230px;
+    }
+}

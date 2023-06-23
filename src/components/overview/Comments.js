@@ -4,10 +4,10 @@ import { AiFillStar } from 'react-icons/ai'
 import {BiLike} from "react-icons/bi"
 
 const Comments = () => {
-  return (
+  return ( 
     <div style={{width:"100%",maxWidth:"700px"}}>
-        <div style={{display:"flex"}}>
-            <img src={dp} alt="dp" style={{width:"60px",height:"60px",borderRadius:"50%"}} />
+        <div style={{display:"flex",alignItems:"center"}}>
+            <img src={dp} alt="dp" style={{width:"70px",borderRadius:"50%"}} />
             <div style={{marginLeft:"1rem"}}>
             <h2 style={{marginTop:"0",marginBottom:"0"}}>Joe Henderson</h2>
             <p style={{marginTop:"0.3rem",marginBottom:".5rem"}}>March 25, 2023</p>

@@ -7,7 +7,7 @@
     height:35px;
     padding:.5rem 1rem;
     margin-left:1rem;
-    font-size:1rem; 
+    font-size:1rem;  
 
     background-color: transparent;
     border:1px solid rgb(85, 84, 84);
@@ -91,6 +91,11 @@
     padding: .5rem .8rem;
 }
 
+.selected-shipping  {
+  
+  background-color: rgb(240, 238, 238);
+  transform: scale(1.02);
+}
 
 @media screen and (max-width:1200px) {
 

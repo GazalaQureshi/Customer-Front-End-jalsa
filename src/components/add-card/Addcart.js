@@ -60,7 +60,7 @@ const Addcart = () => {
       <div className='savedcard-left' style={{ width: "370px",marginLeft:"3rem" }}>
 
       <div className="sp-left1" style={{ display: "flex",alignItems:"center",marginLeft:"1rem",marginTop:"1rem"}}>
-            <img src={profile_img} alt="profile image" style={{ width: "85px", height: "85px", borderRadius: "50%" }} />
+              <img src={profile_img} alt="profile-pic" style={{ width: "85px", height: "85px", borderRadius: "50%" }} />
             <div style={{ marginLeft: "1rem", textAlign: "center" }}>
               <h2 style={{ margin: "0", marginTop: "1.3rem",fontSize:"1.1rem" }}>Hello,</h2>
               <h1 style={{ margin: "0",fontSize:"1.5rem" }}>Jane Doe</h1>
@@ -138,7 +138,7 @@ const Addcart = () => {
       </div> :""
     }
       
-      <div style={{ width:getDivWidth(), border: "1px solid grey", borderRadius: "20px",marginLeft:"1rem",marginRight:"1rem", marginTop: "3rem" ,paddingLeft:"1rem",paddingRight:"2rem"}}>
+      <div style={{ width:getDivWidth(), border: "1px solid grey", borderRadius: "10px",marginLeft:"1rem",marginRight:"1rem", marginTop: "3rem" ,paddingLeft:"1rem",paddingRight:"2rem"}}>
         <h1 className='ck-titles'>Add new Card</h1>
         <label className='ck-name'  htmlFor='' style={{ display: "block", marginBottom: ".3rem" }}>Card Number</label>
         <input className='ck-input'  type="text" placeholder='9324 0000 0000 0000' style={{ paddingLeft:".5rem", border: "1px solid rgb(200, 194, 194)", borderRadius: "5px", marginBottom: "1.5rem" }}/>
@@ -149,7 +149,7 @@ const Addcart = () => {
           </div>
           <div style={{width:"47%"}}>
           <label className='ck-name' style={{ display: "block", marginBottom: ".3rem" }}>CVV</label>
-            <input className='ck-input' type="text" placeholder=' ...'  style={{paddingLeft:".5rem", border: "1px solid rgb(200, 194, 194)", borderRadius: "5px", marginBottom: "1.5rem" }}/>
+            <input className='ck-input' type="text" placeholder=' ...' maxLength={3}  style={{paddingLeft:".5rem", border: "1px solid rgb(200, 194, 194)", borderRadius: "5px", marginBottom: "1.5rem" }}/>
           </div>
 
         </div>

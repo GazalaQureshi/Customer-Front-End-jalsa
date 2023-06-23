@@ -65,7 +65,7 @@ const Savedcard = () => {
         {showsection ?  <div className='savedcard-left' style={{ width: "370px" ,marginLeft:"3rem"}}>
 
         <div className="sp-left1" style={{ display: "flex",alignItems:"center",marginLeft:"1rem",marginTop:"1rem"}}>
-            <img src={profile_img} alt="profile image" style={{ width: "85px", height: "85px", borderRadius: "50%" }} />
+            <img src={profile_img} alt="profile iage" style={{ width: "85px", height: "85px", borderRadius: "50%" }} />
             <div style={{ marginLeft: "1rem", textAlign: "center" }}>
               <h2 style={{ margin: "0", marginTop: "1.3rem",fontSize:"1.1rem" }}>Hello,</h2>
               <h1 style={{ margin: "0",fontSize:"1.5rem" }}>Jane Doe</h1>

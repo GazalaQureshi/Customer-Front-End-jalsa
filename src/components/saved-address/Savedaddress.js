@@ -111,13 +111,13 @@ const Savedaddress = () => {
 
 
   const Singleaddress = (props) => {
-    const { phoneNumber, title, city_pin, area } = props
+    const { phoneNumber, title, city_pin, area,id } = props
     const formattedPhoneNumber = `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6)}`;
     return (
       <div style={{display:"flex",color:"rgb(110,115,120)",marginTop:".6rem" }}>
-        <input className='sa-radio' type="radio" name="singleAdr" style={{alignSelf:"start",marginRight:".5rem"}}/>
+        <input className='sa-radio' id={id} type="radio" name="singleAdr" style={{alignSelf:"start",marginRight:".5rem"}}/>
         <div >
-          <h2  className='ck-titles' style={{marginTop:"0.5rem",marginBottom:".2rem"}}>{title}</h2>
+          <label htmlFor={id} className='ck-titles' style={{marginTop:"0.5rem",marginBottom:".2rem"}}>{title}</label>
           <p style={{marginTop:"0.5rem",marginBottom:".2rem"}}>{area}</p>
           <p style={{marginTop:"0.5rem",marginBottom:".2rem"}}>{city_pin}</p>
           <p style={{marginTop:"0.8rem",marginBottom:".2rem"}}>Mobile: {formattedPhoneNumber}</p>
@@ -138,7 +138,7 @@ const Savedaddress = () => {
       <div className='savedcard-left' style={{ width: "370px" ,marginLeft:"3rem"}}>
 
       <div className="sp-left1" style={{ display: "flex",alignItems:"center",marginLeft:"1rem",marginTop:"1rem"}}>
-            <img src={profile_img} alt="profile image" style={{ width: "85px", height: "85px", borderRadius: "50%" }} />
+            <img src={profile_img} alt="profilemage" style={{ width: "85px", height: "85px", borderRadius: "50%" }} />
             <div style={{ marginLeft: "1rem", textAlign: "center" }}>
               <h2 style={{ margin: "0", marginTop: "1.3rem",fontSize:"1.1rem" }}>Hello,</h2>
               <h1 style={{ margin: "0",fontSize:"1.5rem" }}>Jane Doe</h1>

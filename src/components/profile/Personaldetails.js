@@ -14,7 +14,7 @@ const Personaldetails = () => {
           <label htmlFor='ck-phno' style={{ display: "block", marginBottom: ".2rem" }}>Phone Number *</label>
           <input type="text" id="ck-phno" className='pdetails-input' placeholder='Enter Your Phone Number' style={{ paddingLeft:".5rem", border: "1px solid rgb(200, 194, 194)", borderRadius: "5px" }} />
           <label htmlFor='ck-dob' style={{ display: "block", marginBottom: ".2rem" }}>Date of Birth *</label>
-          <input type="text" id="ck-dob" placeholder='DD / MM / YY' style={{ width: "20%", height: "35px",paddingLeft:".5rem", border: "1px solid rgb(200, 194, 194)", borderRadius: "5px" }} />
+          <input type="text" id="ck-dob" className='ck-input' placeholder='DD / MM / YY' style={{ width: "32%", height: "30px",paddingLeft:".5rem", border: "1px solid rgb(200, 194, 194)", borderRadius: "5px" }} />
           </div>
           <button className='pd-right-update'>UPDATE</button>
         </div>

@@ -4,7 +4,7 @@ import "./Trending.css";
 
 import trendData from "../../data/Trend"
 import trendData2 from "../../data/Trend2"
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowDown } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Trending = () => {
@@ -35,7 +35,7 @@ const Trending = () => {
       {
         breakpoint: 9999,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
         }
       },
       // Add more breakpoints and settings as needed
@@ -55,34 +55,37 @@ const Trending = () => {
             const { img, title } = single
             return (
               <div>
-                {/* <div className="hp-trend-img"> */}
-                <img className="hp-trend-img" src={img} alt="trendimg" style={{ objectFit: "cover", borderRadius: "10px", margin: "auto" }} />
-                {/* </div> */}
+            
+                <div style={{margin:"0 .5rem"}}>
+                <img  src={img} alt="trendimg" style={{ objectFit: "cover", borderRadius: "10px", margin: "auto",width:"100%",height:"100%" }} />
+                </div>
 
                 <h1 className="shop-trend-image-heading" style={{ textAlign: "center", marginTop: ".2rem", marginBottom: "2rem" }}>{title}</h1>
-              </div>
+            
+              </div> 
             )
           })
         }
       </Slider>
-      <Slider {...settings}>
-        {/* <div className="hp-trend-img" sty>
-          <div className="hp-trend-default" style={{ background: "rgb(240,240,240)", height: "100%", width: "90%", borderRadius: "10px" }}>
-            <h2 className="hp-trend-default-h2">DELIVER BEFORE EID</h2>
+      <div>
+      <div className="" style={{ background: "rgb(240,240,240)", margin:"1rem auto",padding:" 1rem 1.5rem", borderRadius: "10px" }}>
+            
             <h1 className="hp-trend-default-h1">Unstitched Range</h1>
+            <h2 className="hp-trend-default-h2">DELIVER BEFORE EID</h2>
             <p className="hp-trend-default-p1">Upto <b>75%</b> off</p>
-            <p className="hp-trend-default-p2">View All <BsArrowRight />  </p>
+            <button style={{display:"flex"}} className="viewall-btn"><span style={{marginRight:".4rem"}}>View All</span> <BsArrowDown fontSize="1rem"/>  </button>
           </div>
-
-        </div> */}
+      
+      <Slider {...settings} autoplay={false}>
+        
         {
           trendData2.map((single) => {
             const { img, title } = single
             return (
               <div >
-                {/* <div className="hp-trend-img" > */}
-                <img className='hp-trend-img' src={img} alt="trendimg" style={{ objectFit: "cover", margin: "auto", borderRadius: "10px" }} />
-                {/* </div> */}
+                <div style={{margin:"0 .5rem"}}>
+                <img  src={img} alt="trendimg" style={{ objectFit: "cover", borderRadius: "10px", margin: "auto",width:"100%",height:"100%" }} />
+                </div>
 
                 <h1 className="shop-trend-image-heading" style={{ textAlign: "center", marginTop: ".5rem", marginBottom: ".2rem", fontSize: "2.2rem" }}>{title}</h1>
                 <h2 className="shop-trend-image-heading-2" style={{ textAlign: "center", marginTop: ".2rem" }}>upto <b>65%</b> off</h2>
@@ -91,6 +94,7 @@ const Trending = () => {
           })
         }
       </Slider>
+      </div>
     </div>
 
   );

@@ -58,8 +58,8 @@ const Editors = () => {
   ];
 
   return (
-    <div className="editor-all" style={{ paddingLeft: "2rem", paddingRight: "2rem" }}>
-
+   
+      <div  className="editor-all"  style={{ padding: `${window.innerWidth > 768 ? "0 2rem" : "0 1rem"}` }}>
       <h1  className='hp-title' style={{marginTop:"1.5rem"}}>Editors Choice</h1>
       <div className="flex-con" >
         <Slider {...settings}>
@@ -67,7 +67,7 @@ const Editors = () => {
             const { img, title, text } = item;
             return (
               <div className="editor-item" >
-                <div >
+                <div style={{margin:".5rem"}}>
                   <img src={img} alt="editors" style={{ width: "100%", objectFit:"cover", margin: 'auto' }} />
                 </div>
 

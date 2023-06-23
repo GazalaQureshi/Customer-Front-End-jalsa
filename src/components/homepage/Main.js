@@ -61,7 +61,9 @@ const Main = () => {
     transitionDuration: 700, // Set the transition duration between slides (optional)
     infinite: true, // Allow infinite loop of slides (optional)
     indicators: false, // Show slide indicators (optional)
-    arrows: true, // Show navigation arrows (optional)
+    arrows: true, 
+
+    // Show navigation arrows (optional)
   }
 
   return (
@@ -71,7 +73,7 @@ const Main = () => {
         {
           hpmain.map((single) => {
             const { id, img, title, subtitle, cover } = single
-            return (
+            return ( 
               <div>
                 <img className="slider-images-for-mb" src={img} alt="sa" style={{ width: "100%", position: "relative", objectFit: { cover } }} />
                 <div className="overlay" style={{ display: "flex", justifyContent: 'center', alignItems: 'center', width: "100vw", }}>

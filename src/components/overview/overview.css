@@ -20,9 +20,13 @@
     
 } 
 .ov-top-left-2i {
-    width:23%;
+    width:20%;
     border-radius: 15px;
+    border: 2px solid transparent;
 }
+.selected {
+    transform: scale(1.1);
+  }
 .ov-top-right{
     width:48%;
 }
@@ -36,12 +40,13 @@
 .ov-discription{
     margin:0;
     margin-top:1rem;
-    margin-bottom:1.3rem;
-    font-size:1.8rem;
+    margin-bottom:.7rem;
+  
     padding-left:.4rem;
 }
 .ov-discription > p {
     margin:0.1rem;
+    font-size: 1rem;
 }
 .ov-rate {
     margin:.5rem;
@@ -261,7 +266,9 @@ input.ov-box{
     margin-bottom: 0.5rem;
    margin-top: 0;
 }
-
+.slick-dots {
+    bottom:0px !important;
+}
 @media screen and (max-width:1400px) {
     
     .ov-wishexplore-1p {
@@ -319,7 +326,7 @@ margin-right:5rem;
 }
 .ov-discription {
    
-    font-size: 1.5rem;
+   
 }
 .ov-care {
    
@@ -359,7 +366,7 @@ margin-right:5rem;
     .ov-discription{
         margin-top:.6rem;
         margin-bottom:.8rem;
-        font-size:1.2rem;
+   
     }
     .ov-rate {
         margin-bottom:.2rem;
@@ -574,7 +581,7 @@ margin-right:5rem;
         width:550px;
     }
     .ov-reviews-1 {
-        margin-left: 1rem !important;
+        margin-left: 0rem !important;
         margin-right: 1rem !important;
     }
     .review-line {
@@ -609,7 +616,7 @@ margin-right:5rem;
     }
     .ov-discription{
         margin-top:.6rem;
-        margin-bottom:.8rem;
+        margin-bottom:.5rem;
         
     }
     .ov-discription > p {
@@ -833,4 +840,27 @@ margin-right:5rem;
     .ov-top-right {
         width:330px;
     }
+    .ov-wishexplore {
+        display: flex;
+        flex-direction: column;
+        margin-top:1.5rem;
+    
+    }
+    .ov-wishexplore-1 {
+        margin-right:1rem;
+    }
+    .ov-wishexplore-1p {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    .ov-explore-icons{
+        font-size: 1.5rem !important;
+    }
+    .ov-wishexplore-1p{
+        margin:0.3rem 1rem .3rem 0;
+    }
+}
+.selected-size{
+    transform:scale(1.2);
+    background:rgb(220,220,220);
 }

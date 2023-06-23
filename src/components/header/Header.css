@@ -126,6 +126,7 @@ ul {
     font-size:1.7rem;
     margin:0 2.6rem;
     padding-left:0;
+    /* box-shadow: 5px 5px 2px 1px; */
     
     
 }
@@ -135,17 +136,17 @@ ul {
 }
 @media screen and (max-width:1600px) {
     .header-bottom {
-        font-size:1.5rem;   
+        font-size:1.3rem;   
     }
 }
 @media screen and (max-width:1400px) {
     .header-bottom {
-        font-size:1.3rem;   
+        font-size:1.1rem;   
     }
 }
 @media screen and (max-width:1200px) {
     .header-bottom {
-        font-size:1.1rem;   
+        font-size:1rem;   
     }
 }
 
@@ -169,3 +170,86 @@ ul {
     font-weight: bold;
     color: red;
   }
+  
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .header-top {
+      display: none !important;
+    }
+  
+    .header-link-part {
+      display: block !important;
+      margin-top: -40px;
+      background:black;
+      color: white;
+      width: 100%;
+      right: 0;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+      transition: all .5s linear;
+    }
+    .overhidden {
+      overflow: hidden;
+    }
+    .hm-input-search {
+      display: none !important;
+    }
+  
+    .header-middle-2 {
+      position: absolute;
+    }
+  
+    ul.header-middle-icons.header-middle-icons-for-mb {
+      padding: 0 !important;
+    }
+  
+    li.head-icons-5 {
+      display: block !important;
+    }
+  
+    li.head-icons-1,
+    li.head-icons-3 {
+      display: none !important;
+    }
+  
+    .header-middle.header-middle-section {
+      justify-content: space-between;
+    }
+  
+    .header-middle-1.header-middle-head-logo {
+      margin: auto;
+    }
+  
+    li.head-icons-6 {
+      display: block !important;
+    }
+  
+    img.header-middle-logo.logo-mb {
+      margin-left: 8rem;
+      width: 128px;
+      margin-top: 8px;
+    }
+  
+    li.head-icons-2,
+    li.head-icons-4,
+    /* li.head-icons-5, */
+    li.head-icons-6 {
+      font-size: 22px;
+    }
+  
+    .header-middle.header-middle-section {
+      line-height: 35px;
+      height: 25px;
+    }
+  
+    ul.header-bottom.header-links {
+      display: block;
+    }
+  
+    .header-bottom-nonactive {
+      color: white !important;
+    }
+  
+    .only-mobile-nav-mbsr {
+      display: block !important;
+    }}

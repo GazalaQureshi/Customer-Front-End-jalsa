@@ -9,7 +9,7 @@ const Bestseller = () => {
           id: 3,
           img: "./images/recomended/r3.png",
           title: "Blue Skill Kurta Set",
-          subtitle:" Discription text"
+          subtitle:" Discription text" 
         },
         {
           id: 4,
@@ -80,7 +80,7 @@ const Bestseller = () => {
       };
 
   return (
-    <div style={{ padding: "0 2rem", }} >
+    <div style={{ padding: `${window.innerWidth > 768 ? "0 2rem" : "0 .5rem"}` }}>
     <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginTop:"1.2rem",marginBottom:"1rem" }}>
       <h1  className='hp-title'>Bestseller</h1>
       <button className="vbtn">View All</button>
@@ -90,13 +90,15 @@ const Bestseller = () => {
         data.map((single) => {
           const { img, title,subtitle } = single
           return (
-            <div  style={{ border: "1px solid red", margin: 'auto' }}>
-                <img src={img} className="" alt="trendimg" style={{ width: "90%", borderRadius: "0px", marginBottom: '-40px', position: 'relative', zIndex: '-1' }} />
-                <div style={{ width: "90%", background: "rgb(240,240,240)", border: "1px solid rgb(240,240,240)" }}>
+            <div>
+            <div  style={{margin:"0 .5rem"}}>
+                <img src={img} className="" alt="trendimg" style={{ width: "100%", borderRadius: "0px", marginBottom: '-40px', position: 'relative', zIndex: '-1' }} />
+                <div style={{ width: "100%", background: "rgb(240,240,240)", border: "1px solid rgb(240,240,240)" }}>
                   <h1  className="recom-title" style={{ textAlign: "center", marginTop: ".5rem", width: '100%', marginBottom: ".2rem" }}>{title}</h1>
                   <h2 className="recom-text" style={{ textAlign: "center", marginTop: ".2rem", marginBottom: ".6rem" }}>{subtitle}</h2>
                 </div>
 
+              </div>
               </div>
           )
         })

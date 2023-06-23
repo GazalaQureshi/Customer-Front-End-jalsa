@@ -8,7 +8,7 @@ const Checkout = () => {
 
 
   const checkoutorder = [
-    {
+    { 
       img: "./images/women/frocks.png",
       title: "Hem Lotus Outfit Luxury Pret",
       size: "Small",
@@ -79,10 +79,8 @@ const Checkout = () => {
       return '';
     }
   };
+  const [selectedMethod, setSelectedMethod] = useState(null);
  
-  const toggleRotation = () => {
-    
-  };
 
   const Ordersummary = () => {
     return (
@@ -230,30 +228,34 @@ const Checkout = () => {
       </div>
       <div className="checkout-bottom" style={{ border: "1px solid grey", borderRadius: "20px", width: getDivWidthbottom(), padding: "1rem  ", margin: "2rem 1rem 1rem 1rem" }}>
         <h1 className='ck-titles' style={{ marginTop: ".5rem" }} >Shipping Method</h1>
-        <div className='ck-box' style={{ display: "flex", justifyContent: "space-between", border: "1px solid grey", borderRadius: "10px", marginBottom: "1rem" }}>
-          <div>
-            <h1 className='ck-shipping' style={{ margin: "0", display: "flex" }}><input type="radio" name="ck-radiobtn" className='ck-radiobtn'></input><span style={{ marginTop: ".1rem" }}>Economy</span></h1>
+        <div className={`ck-box ${selectedMethod === 'economy' ? 'selected-shipping' : ''}`}
+  onClick={() => setSelectedMethod('economy')} style={{ display: "flex", justifyContent: "space-between", border: "1px solid grey", borderRadius: "10px", marginBottom: "1rem" }}>
+          <div >
+            <h1 className='ck-shipping' style={{ margin: "0", display: "flex" }}><input type="radio" name="ck-radiobtn" className='ck-radiobtn'  checked={selectedMethod === 'economy'} readOnly></input><span style={{ marginTop: ".1rem" }}>Economy</span></h1>
             <p className='ck-bottm-p' >Estimated delivery 30 March</p>
           </div>
           <h1 className='ck-titles' style={{ margin: "0 ", marginTop: ".5rem" }}>$10</h1>
         </div>
-        <div className='ck-box' style={{ display: "flex", justifyContent: "space-between", border: "1px solid grey", borderRadius: "10px", marginBottom: "1rem" }}>
+        <div className={`ck-box ${selectedMethod === 'express' ? 'selected-shipping' : ''}`}
+  onClick={() => setSelectedMethod('express')} style={{ display: "flex", justifyContent: "space-between", border: "1px solid grey", borderRadius: "10px", marginBottom: "1rem" }}>
           <div>
-            <h1 className='ck-shipping' style={{ margin: "0", display: "flex" }}><input type="radio" name="ck-radiobtn" className='ck-radiobtn'></input><span style={{ marginTop: ".1rem" }}>Express</span></h1>
+            <h1 className='ck-shipping' style={{ margin: "0", display: "flex" }}><input type="radio" name="ck-radiobtn" className='ck-radiobtn' checked={selectedMethod === 'express'} readOnly></input><span style={{ marginTop: ".1rem" }}>Express</span></h1>
             <p className='ck-bottm-p' >Estimated delivery 30 March</p>
           </div>
           <h1 className='ck-titles' style={{ margin: "0 ", marginTop: ".5rem" }}>$10</h1>
         </div>
-        <div className='ck-box' style={{ display: "flex", justifyContent: "space-between", border: "1px solid grey", borderRadius: "10px", marginBottom: "1rem" }}>
+        <div className={`ck-box ${selectedMethod === 'regular' ? 'selected-shipping' : ''}`}
+  onClick={() => setSelectedMethod('regular')} style={{ display: "flex", justifyContent: "space-between", border: "1px solid grey", borderRadius: "10px", marginBottom: "1rem" }}>
           <div>
-            <h1 className='ck-shipping' style={{ margin: "0", display: "flex" }}><input type="radio" name="ck-radiobtn" className='ck-radiobtn'></input><span style={{ marginTop: ".1rem" }}>Regular</span></h1>
+            <h1 className='ck-shipping' style={{ margin: "0", display: "flex" }}><input type="radio" name="ck-radiobtn" className='ck-radiobtn' checked={selectedMethod === 'regular'} readOnly></input><span style={{ marginTop: ".1rem" }}>Regular</span></h1>
             <p className='ck-bottm-p'>Estimated delivery 30 March</p>
           </div>
           <h1 className='ck-titles' style={{ margin: "0 ", marginTop: ".5rem" }}>$10</h1>
         </div>
-        <div className='ck-box' style={{ display: "flex", justifyContent: "space-between", border: "1px solid grey", borderRadius: "10px", marginBottom: "1rem" }}>
-          <div>
-            <h1 className='ck-shipping' style={{ margin: "0", display: "flex" }}><input type="radio" name="ck-radiobtn" className='ck-radiobtn'></input><span style={{ marginTop: ".1rem" }}>Cargo</span></h1>
+        <div className={`ck-box ${selectedMethod === 'cargo' ? 'selected-shipping' : ''}`}
+  onClick={() => setSelectedMethod('cargo')} style={{ display: "flex", justifyContent: "space-between", border: "1px solid grey", borderRadius: "10px", marginBottom: "1rem" }}>
+          <div >
+            <h1 className='ck-shipping' style={{ margin: "0", display: "flex" }}><input type="radio" name="ck-radiobtn" className='ck-radiobtn'  checked={selectedMethod === 'cargo'} readOnly></input><span style={{ marginTop: ".1rem" }}>Cargo</span></h1>
             <p className='ck-bottm-p' >Estimated delivery 30 March</p>
           </div>
           <h1 className='ck-titles' style={{ margin: "0 ", marginTop: ".5rem" }}>$10</h1>
@@ -261,6 +263,11 @@ const Checkout = () => {
 
 
       </div>
+
+
+
+
+      
       {
             window.innerWidth < 992 && <button style={{}} className='ck-top2-paybtn'>CONTINUE TO PAYMENT</button>
           }
