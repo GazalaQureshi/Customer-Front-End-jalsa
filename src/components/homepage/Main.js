@@ -76,13 +76,16 @@ const Main = () => {
             return ( 
               <div>
                 <img className="slider-images-for-mb" src={img} alt="sa" style={{ width: "100%", position: "relative", objectFit: { cover } }} />
-                <div className="overlay" style={{ display: "flex", justifyContent: 'center', alignItems: 'center', width: "100vw", }}>
+                <div className="overlay">
+                <div  style={{ display: "flex", justifyContent: 'center', alignItems: 'center', width: "100vw", }}>
                   <div className="txt-part-slider" style={{ position: "absolute", bottom: "10rem", color: "white", textAlign: 'center' }}>
                     <h1 className="hp-main-title heading-for-slider-mb" style={{ margin: "0 auto" }}>{title}</h1>
                     <p className="hp-main-subtitle para-for-slider-mb" style={{ marginTop: ".2rem", fontWeight: "bold" }}>{subtitle}</p>
                     <button className="hp-shop btn-for-slider-mb">SHOP NOW</button>
                   </div>
+                </div> 
                 </div>
+                
  
 
               </div>

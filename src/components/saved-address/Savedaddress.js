@@ -15,11 +15,19 @@ import cust_support from "../../images/profile/customer_support.png"
 import rate_app from "../../images/profile/rate_app.png" 
 import suggestion from "../../images/profile/make_suggestion.png"
 import { Link } from 'react-router-dom'
+import { addAddressschema } from '../../schemas'
+import { useFormik } from 'formik'
+
+
+const initialValues ={
+ SavedAddress:""
+}
+
 
 const Savedaddress = () => {
 
   const [showsection, setShowsection] = useState(true);
-
+ 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 992) {
@@ -73,6 +81,18 @@ const Savedaddress = () => {
     }
   };
 
+   /////////////////form handling //////////////////////////////////
+   const {values,errors,touched,handleBlur,handleChange,handleSubmit} = useFormik({
+    initialValues:initialValues,
+    validationSchema:addAddressschema,
+    onSubmit: (values,action) =>{
+      console.log("values is consoled");
+      action.resetForm()
+    }
+  })
+
+  console.log(values);
+
 
   const addressArr = [
     {
@@ -115,7 +135,8 @@ const Savedaddress = () => {
     const formattedPhoneNumber = `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6)}`;
     return (
       <div style={{display:"flex",color:"rgb(110,115,120)",marginTop:".6rem" }}>
-        <input className='sa-radio' id={id} type="radio" name="singleAdr" style={{alignSelf:"start",marginRight:".5rem"}}/>
+        <input 
+        className='sa-radio' id={id} type="radio" name="savedAddress" value={title} style={{alignSelf:"start",marginRight:".5rem"}}/>
         <div >
           <label htmlFor={id} className='ck-titles' style={{marginTop:"0.5rem",marginBottom:".2rem"}}>{title}</label>
           <p style={{marginTop:"0.5rem",marginBottom:".2rem"}}>{area}</p>
@@ -216,6 +237,7 @@ const Savedaddress = () => {
       </div> : ""
     }
     <div style={{ width: getDivWidth(),marginLeft:"auto",marginRight:"auto"}}>
+    <form onSubmit={handleSubmit}>
       <div style={{  border: "1px solid grey", borderRadius: "10px", marginTop: "1.5rem",marginLeft:"1rem",marginRight:"1rem" ,padding:".6rem"}}>
         <h1 className='ck-titles ck-add'>saved address</h1>
         <div className= {showgrid   ? "sa-singleAddress-grid" : "sa-singleAddress-flex"}   >
@@ -230,9 +252,10 @@ const Savedaddress = () => {
             })
           }
         </div>
-        <button className='sa-right-btns'>CONTINUE</button>
-        <Link to="/add-address" style={{textDecoration:"none" ,cursor:"pointer"}} ><button className='sa-right-btns'>ADD NEW ADDRESS</button></Link>
+        <button className='sa-right-btns' type="submit" >CONTINUE</button>
+        <Link to="/add-address" style={{textDecoration:"none" ,cursor:"pointer"}} ><button className='sa-right-btns' type="button">ADD NEW ADDRESS</button></Link>
       </div>
+      </form>
       </div>
     </div>
   )

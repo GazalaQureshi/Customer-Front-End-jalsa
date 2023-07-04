@@ -7,6 +7,7 @@ import logo from "../../images/logos/fsblack-logo.png"
 import insta from "../../images/logos/instagram.png"
 import writemail from "../../images/logos/write-email.png"
 import { FaAngleDown, FaFacebookF, FaTwitter } from "react-icons/fa"
+import { AiFillInstagram } from 'react-icons/ai'
 
 const Footer = () => { 
 
@@ -68,7 +69,7 @@ const Footer = () => {
 
         <ul className='f1-icons'>
           <li ><FaFacebookF className='f1-ic' /></li>
-          <li><img src={insta} alt="f1-insta-logo" /></li>
+          <li><AiFillInstagram color="black" className='f1-ic'/></li>
           <li ><FaTwitter className='f1-ic' /></li>
         </ul>
 
@@ -118,7 +119,7 @@ const Footer = () => {
           </ul>
         )}
       </div>
-      {/* <div className='footer-4'>
+      {/* <div className='footer-4'> 
         
        
       </div> */}

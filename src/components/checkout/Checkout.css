@@ -55,16 +55,17 @@
     
 }
   .ck-name {
-    font-size:1.2rem;
+    font-size:1rem;
   }
   .ck-input {
     width: 100%;
-    height:45px;
+    height:40px;
     border: 1px solid rgb(200, 194, 194); 
     border-radius:5px;
-    font-size: 1.2rem;
+    font-size: .8rem;
     padding-left: .8rem;
     box-sizing: border-box;
+    outline:none;
   }
   .ck-top2-totals {
     display: flex; 
@@ -97,11 +98,22 @@
   transform: scale(1.02);
 }
 
+
+
+/* **************VALIDATION ERROR *************************** */
+
+.validation-error{
+  color:red;
+  font-size: .9rem;
+}
+
+
+
 @media screen and (max-width:1200px) {
 
 .ck-input {
     height:40px;
-    font-size: 1rem;
+    /* font-size: .8rem; */
     padding-left: .8rem;
   }
   .ck-top2-title {
@@ -129,6 +141,9 @@
     width:210px;
     font-size:.8rem;
 }
+.validation-error{
+    font-size: .8rem;
+}
 
 }
 @media screen and (max-width:992px) {
@@ -155,10 +170,10 @@
     font-size: 1.2rem;
 }
 .ck-titles{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .ck-apply{
-  height:40px;
+  height:36px;
 }
 .ck-top2-img{
   height:140px;
@@ -231,6 +246,10 @@
    color:grey;
    font-size:.6rem;
 }
+.validation-error{
+  font-size: .7rem;
+}
+
 
 }
 
@@ -285,4 +304,8 @@
     left:11rem;
 
   }
+  .validation-error{
+    font-size: .6rem;
+}
+
 }

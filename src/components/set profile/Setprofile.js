@@ -13,11 +13,21 @@ import cust_support from "../../images/profile/customer_support.png"
 import rate_app from "../../images/profile/rate_app.png"
 import suggestion from "../../images/profile/make_suggestion.png"
 import { Link } from 'react-router-dom'
+import { useFormik } from 'formik'
+import { editprofileschema } from '../../schemas'
+
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 
 
 
- 
+const initialValues ={
+  name:"",
+  email:"",
+  number:"",
+  DOB:""
+}
 
 const Setprofile = () => {
 
@@ -80,6 +90,19 @@ const Setprofile = () => {
       return "1.1rem"
     }
   }
+
+  /////////////////form handling //////////////////////////////////
+  const {values,errors,touched,handleBlur,handleChange,handleSubmit} = useFormik({
+    initialValues:initialValues,
+    validationSchema:editprofileschema,
+    onSubmit: (values,action) =>{
+      console.log("values is consoled");
+      action.resetForm()
+    }
+  })
+
+  console.log(values);
+  console.log(errors);
 
   return (
     <div>
@@ -168,18 +191,38 @@ const Setprofile = () => {
       {
         showsection ? 
         <div style={{ width: "60%",marginLeft:"auto",marginRight:"auto"}}>
+        <form onSubmit={handleSubmit}>
         <div className='setprofile-right' style={{ marginRight:"1rem",marginLeft:"1rem", border: "1px solid rgb(218,220,222)",borderRadius:"15px", padding: "1rem 1rem 1rem 2rem " }}>
-          <h1>Add New Addressss</h1>
-          <label htmlFor='ck-name' style={{ display: "block", fontSize: "1.2rem", marginBottom: ".3rem" }}>Full Name *</label>
-          <input type="text" id="ck-name" placeholder='Enter Your Full Name' style={{ width: "95%", height: "40px",paddingLeft:".5rem",fontSize:"1rem", border: "1px solid rgb(200, 194, 194)", borderRadius: "5px", marginBottom: "1.5rem" }} />
-          <label htmlFor='ck-email' style={{ display: "block", fontSize: "1.2rem", marginBottom: ".2rem" }}>Enter Your Email Address</label>
-          <input type="text" id="ck-email" placeholder='Enter Your Email Address' style={{ width: "95%", height: "40px",paddingLeft:".5rem",fontSize:"1rem", border: "1px solid rgb(200, 194, 194)", borderRadius: "5px", marginBottom: "1.5rem" }} />
-          <label htmlFor='ck-phno' style={{ display: "block", fontSize: "1.2rem", marginBottom: ".2rem" }}>Phone Number *</label>
-          <input type="text" id="ck-phno" placeholder='Enter Your Phone Number' style={{ width: "95%", height: "40px",paddingLeft:".5rem",fontSize:"1rem" , border: "1px solid rgb(200, 194, 194)", borderRadius: "5px", marginBottom: "1.5rem" }} />
-          <label htmlFor='ck-dob' style={{ display: "block", fontSize: "1.2rem", marginBottom: ".2rem" }}>Date of Birth *</label>
-          <input type="text" id="ck-dob" placeholder='DD / MM / YY' style={{ width: "20%", height: "35px",paddingLeft:".5rem",fontSize:"1rem", border: "1px solid rgb(200, 194, 194)", borderRadius: "5px", marginBottom: "1.5rem" }} />
-          <button className='sp-right-update'>UPDATE</button>
-        </div></div> :""
+          <h1 style={{marginTop:"0"}} className='ck-titles'>EDIT PROFILE</h1>
+          <div className='pdetails'>
+          
+          <label htmlFor='ck-name' style={{ display: "block", marginBottom: ".3rem" }}>Full Name *</label>
+          <input  type="text"  name="name" autoComplete='off' value={values.name} onChange={handleChange} onBlur={handleBlur}
+            id="ck-name" className='pdetails-input' placeholder='Enter Your Full Name' style={{paddingLeft:".5rem", border: "1px solid rgb(200, 194, 194)", borderRadius: "5px"}} />
+          {
+          (errors.name && touched.name )&& <p style={{marginTop:"-1.3rem",marginBottom:"0.5rem"}} className='validation-error'>{errors.name}</p>
+        }
+          <label htmlFor='ck-email' style={{ display: "block", marginBottom: ".2rem" }}>Enter Your Email Address</label>
+          <input type="text"  name="email" autoComplete='off' value={values.email} onChange={handleChange} onBlur={handleBlur}
+            id="ck-email" className='pdetails-input' placeholder='Enter Your Email Address' style={{paddingLeft:".5rem", border: "1px solid rgb(200, 194, 194)", borderRadius: "5px" }} />
+          {
+          (errors.email && touched.email )&& <p style={{marginTop:"-1.3rem",marginBottom:"0.5rem"}} className='validation-error'>{errors.email}</p>
+        }
+          <label htmlFor='ck-phno' style={{ display: "block", marginBottom: ".2rem" }}>Phone Number *</label>
+          <input  type="text"  name="number" autoComplete='off' value={values.number} onChange={handleChange} onBlur={handleBlur}
+           id="ck-phno" className='pdetails-input' placeholder='Enter Your Phone Number' style={{ paddingLeft:".5rem", border: "1px solid rgb(200, 194, 194)", borderRadius: "5px" }} />
+          {
+          (errors.number && touched.number )&& <p style={{marginTop:"-1.3rem",marginBottom:"0.5rem"}} className='validation-error'>{errors.number}</p>
+        }
+          <label htmlFor='ck-dob' style={{ display: "block", marginBottom: ".2rem" }}>Date of Birth *</label>
+          <input   name="DOB" autoComplete='off' value={values.DOB} onChange={handleChange} onBlur={handleBlur}
+          type="date" id="ck-dob" className='ck-input' placeholder='DD / MM / YY' style={{ width: "32%", height: "30px",padding:".5rem", border: "1px solid rgb(200, 194, 194)", borderRadius: "5px" }} />
+          {
+          (errors.DOB && touched.DOB )&& <p style={{marginTop:".1rem",marginBottom:"0.5rem"}} className='validation-error'>{errors.DOB}</p>
+        }
+          </div>
+          <button className='sp-right-update' type="submit">UPDATE</button>
+        </div></form></div> :""
       }
 
        

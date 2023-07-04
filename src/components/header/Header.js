@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./Header.css"
-import { FaFacebookF, FaTwitter } from "react-icons/fa"
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa"
 import { AiOutlineHeart, AiOutlineShoppingCart } from "react-icons/ai"
 import { VscAccount } from "react-icons/vsc"
 import { GrNotification } from "react-icons/gr"
@@ -127,7 +127,7 @@ const Header = () => {
                 <div className="header-top">
                     <ul className='header-top-icons'>
                         <li ><FaFacebookF className='ic' /></li>
-                        <li><img src={insta} width="35px" alt="insta-logo" /></li>
+                        <li><FaInstagram className='ic' color="black"/></li>
                         <li ><FaTwitter className='ic' /></li>
 
                     </ul>
