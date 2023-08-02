@@ -1,0 +1,376 @@
+.oh-input {
+    width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+
+    padding-left: 2.6rem;
+    font-size: 1rem;
+
+}
+
+.oh-heading-div{
+    line-height: 1.5rem;
+}
+.oh-filterimg{
+    width:20px;
+}
+.oh-filterimg-div{
+    height:32px;
+}
+.oh-search {
+    position: absolute;
+    left: 1rem; 
+    top: .5rem;
+    font-size: 1rem;
+}
+
+.oh-er-btn {
+    width: 40%;
+    color: white;
+    background: black;
+    border-radius: 10px;
+    border: none;
+    margin: 0 .6rem.8rem 1rem;
+    padding: .8rem 1.5rem;
+    font-size: 1rem;
+}
+
+.oh-er-btn:hover {
+    background: blue;
+}
+
+.oh-green {
+    background: green;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-top: .25rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+
+.showprofile {
+    left: 0;
+    top: 0;
+    transition: .6s linear all;
+
+
+
+}
+
+.hideprofile {
+    left: -1000px;
+}
+
+.oh-overlay {
+    background: rgba(0, 0, 0, 0.292);
+}
+
+.oh-show {
+    z-index: 2;
+}
+
+.oh-hidden {
+    z-index: -2;
+}
+
+/* /////// */
+.oh-maindiv {
+    padding: 2rem 2.5rem;
+    margin:1rem;
+     margin-top: 3rem;
+}
+
+.oh-heading {
+    font-size: 1.6rem;
+}
+
+.oh-subheading {
+    font-size: 1rem;
+}
+
+.oh-icons {
+    width: 50px;
+    height: 45px;
+}
+
+.oh-status {
+    font-size: 1.5rem;
+}
+
+.oh-info {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.oh-img-div {
+    height: 120px;
+    min-width: 80px;
+    padding: .6rem.8rem;
+}
+
+.oh-name {
+    font-size: 1.7rem;
+}
+
+.oh-name-info {
+    margin: 0;
+    color: grey;
+    font-size: .1.2rem;
+}
+
+.oh-stars {
+    font-size: 1.7rem;
+}
+.oh-singleitem{
+    padding:0.7rem 1.5rem;
+    margin:  2rem .7rem;
+}
+
+@media screen and (max-width:700px) {
+    .oh-maindiv {
+        padding: 1.5rem 1rem;
+        
+    }
+    .oh-filterimg-div{
+        height:28px;
+    }
+    
+.oh-heading-div{
+    line-height: 1rem;
+}
+
+    .oh-heading {
+        font-size: 1.2rem;
+        padding-left: 1.5rem;
+    }
+
+    .oh-subheading {
+        font-size: .8rem;
+        padding-left: 1.5rem;
+    }
+
+    .oh-input {
+        width: 150px;
+        height: 28px;
+        padding-left: 1.6rem;
+        font-size: .8rem;
+
+    }
+
+    .oh-search {
+        left: .7rem;
+        top: .4rem;
+        font-size: .8rem;
+    }
+
+    .oh-status {
+        font-size: 1.3rem;
+    }
+
+    .oh-info {
+        margin: 0;
+        font-size: .7rem;
+    }
+
+    .oh-img-div {
+        height: 100px;
+        min-width: 60px;
+        padding: .6rem.8rem;
+    }
+
+    .oh-name {
+        font-size: 1.4rem;
+    }
+
+    .oh-name-info {
+        margin: 0;
+        color: grey;
+        font-size: .9rem;
+    }
+
+    .oh-er-btn {
+        margin: 0 .6rem.8rem 1rem;
+        padding: .6rem 1rem;
+        font-size: .8rem;
+    }
+
+    .oh-stars {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .oh-maindiv {
+        padding: 1rem .4rem;
+    }
+
+    .oh-heading {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+    .oh-filterimg{
+        width:15px;
+        height:18px;
+
+    }
+
+    .oh-filterimg-div{
+        height:20px;
+        margin-top:.3rem;
+        font-size: .65rem;
+        font-weight:600;
+    }
+    .oh-subheading {
+        font-size: .6rem;
+        padding-left: 1rem;
+    }
+
+    .oh-input {
+        width: 100px;
+        height: 22px;
+        font-size: .6rem;
+
+    }
+
+    .oh-search {
+        left: .7rem;
+        top: .6rem;
+        font-size: .7rem;
+    }
+    .oh-icons {
+        width: 40px;
+        height: 35px;
+    }
+.oh-singleitem{
+    padding:0.5rem 1rem;
+    margin: 1.4rem .7rem;
+}
+
+    .oh-status {
+        font-size: 1.3rem;
+    }
+
+    .oh-info {
+        margin: 0;
+        font-size: .7rem;
+    }
+
+    .oh-img-div {
+        height: 100px;
+        min-width: 60px;
+        padding: .6rem.8rem;
+    }
+
+    .oh-name {
+        font-size: 1.4rem;
+    }
+
+    .oh-name-info {
+        margin: 0;
+        color: grey;
+        font-size: .9rem;
+    }
+
+    .oh-er-btn {
+        margin: 0 .6rem .8rem .5rem;
+        padding: .5rem .5rem;
+        font-size: .8rem;
+        border-radius: 5px;
+
+    }
+    .oh-green {
+        width: 11px;
+        height: 11px;
+        margin-top: .1rem;
+        margin-right: .5rem;
+        margin-left: .5rem;
+    }
+    .oh-er-info{
+        font-size: .6rem;
+    }
+
+    .oh-stars {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .oh-maindiv {
+        padding: 1rem .4rem;
+      
+        margin-top:.5rem;
+
+    }
+
+    .oh-heading {
+        font-size: .8rem;
+        padding-left:.6rem;
+    }
+    .oh-singleitem{
+        padding:0.5rem .7rem;
+    }
+
+    .oh-subheading {
+        font-size: .6rem;
+        padding-left:.6rem;
+    }
+
+    .oh-input {
+        width: 80px;
+        height: 18px;
+        font-size: .5rem;
+
+    }
+
+    .oh-search {
+        left: .7rem;
+        top: .65rem;
+        font-size: .5rem;
+    }
+
+    .oh-status {
+        font-size: .8rem;
+        margin-top:.2rem !important;
+    }
+    .oh-info {
+        margin: 0;
+        font-size: .5rem;
+    }
+
+    .oh-img-div {
+        height: 65px;
+        min-width: 40px;
+        padding: .4rem .5rem .4rem 0;
+    }
+
+    .oh-name {
+        font-size: 1rem;
+    }
+
+    .oh-name-info {
+        margin: 0;
+        color: grey;
+        font-size: .6rem;
+    }
+
+    .oh-er-btn {
+        margin: 0 .4rem.4rem .7rem;
+        padding: .5rem .8rem;
+        font-size: .7rem;
+    }
+    .oh-rate-box{
+        height:25px;
+        padding-left:.5rem !important;
+    }
+    .oh-stars {
+        font-size: 1rem;
+    }
+    .oh-rateproduct{
+        font-size:.7rem;
+        margin-top:.25rem !important;
+    }
+}

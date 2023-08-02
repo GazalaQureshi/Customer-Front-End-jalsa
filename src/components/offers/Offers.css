@@ -1,0 +1,58 @@
+  .noti-img-div {
+    height: 120px;
+    min-width:90px;
+    padding:.6rem.8rem;
+    margin-top:auto;
+    margin-bottom: auto;
+   
+  } 
+  .noti-day{
+    font-size: 1.4rem;
+    margin:.2rem;
+    margin-top:1rem;
+  }
+  .noti-text {
+    font-size: 1.2rem;
+  }
+  .noti-date {
+    font-size: 1rem;
+  } 
+  @media screen and (max-width:800px) {
+    .noti-img-div {
+      height: 110px;
+      min-width:75px;
+      padding:.5rem.7rem;
+     
+    } 
+    .noti-day{
+      font-size: 1.2rem;
+      margin:.2rem;
+      margin-top:1rem;
+    }
+    .noti-text {
+      font-size: 1rem;
+    }
+    .noti-date {
+      font-size: .9rem;
+    }
+  }
+  @media screen and (max-width:500px) {
+    .noti-img-div {
+      height: 85px;
+      min-width:60px;
+      padding:.5rem.7rem;
+     
+    } 
+    .noti-day{
+      font-size: .9rem;
+      margin:.2rem;
+      margin-top:.8rem;
+      margin-left:1rem !important;
+    }
+    .noti-text {
+      font-size: .6rem;
+    }
+    .noti-date {
+      font-size: .7rem;
+    }
+  }

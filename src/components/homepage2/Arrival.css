@@ -1,0 +1,18 @@
+
+.arr-vbtn {
+    padding:.8rem 2rem;
+    align-self: center;
+    width:160px;
+
+    font-size:1rem;
+    border-radius:10px;
+    border:none;
+    font-weight:bold; 
+    background-color:black;
+    color:white;
+}
+.arr-vbtn:hover{
+    background-color:rgb(218, 210, 214) ;
+    transition: all .3s linear;
+    color:black;
+}

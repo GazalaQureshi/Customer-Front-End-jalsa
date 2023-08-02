@@ -1,0 +1,104 @@
+.createacc-container {
+    width:370px;
+    
+    margin:0 auto;
+    border:1px solid rgb(141, 132, 132);
+    border-radius:10px; 
+    text-align: center; 
+    padding: .3rem 1.5rem;
+}
+
+.createacc-title {
+    font-size: 1.5rem;
+    padding:0rem 1rem ;
+} 
+.createacc-text {
+    width:300px;
+    margin:0 auto;
+    margin-bottom:1.2rem;
+    color:rgb(104, 96, 96);
+    
+}
+.createacc-input {
+    display:block;
+    width:90%;
+    padding:.8rem;
+    margin:1rem auto;
+    border-radius:5px;
+    padding-left:1.3rem;
+    border:1px solid rgb(141, 132, 132);
+}
+
+.createacc-agree {
+    font-size:.8rem;
+    margin:0 auto 1.4rem auto;
+}
+.createacc-button{
+    width:180px;
+    height:40px;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    border-radius: 7px;
+    border:none;
+    margin-top:0rem;
+}
+.createacc-button:hover{
+    background: blue;
+}
+.createacc-already {
+    margin-top:.4rem;
+    font-size:.85rem;
+}
+
+@media screen and (max-width:600px) {
+    .createacc-container {
+        width:300px;
+         
+        padding: .3rem 1rem; 
+    }
+    
+    .createacc-title {
+        font-size: 1.2rem;
+        padding:0rem .7rem ;
+    } 
+    .createacc-text {
+        width:90%;
+        margin:0 auto;
+        margin-bottom:1rem;
+        color:rgb(104, 96, 96);
+        font-size: .9rem;
+    }
+    .createacc-input {
+        display:block;
+        width:270px;
+        padding:.8rem;
+        margin:1rem auto;
+        border-radius:5px;
+        padding-left:1.3rem;
+        border:1px solid rgb(141, 132, 132);
+        margin-right: .9rem;
+    }
+    
+    .createacc-agree {
+        font-size:.8rem;
+        margin:0 auto 1.4rem auto;
+    }
+    .createacc-button{
+        width:180px;
+        height:40px;
+        background-color: black;
+        color:white;
+        font-weight: bold;
+        border-radius: 7px;
+        border:none;
+        margin-top:0rem;
+    }
+    .createacc-button:hover{
+        background: blue;
+    }
+    .createacc-already {
+        margin-top:.4rem;
+        font-size:.69rem;
+    }   
+}

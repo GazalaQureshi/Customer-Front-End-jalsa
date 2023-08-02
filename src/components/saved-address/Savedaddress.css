@@ -1,0 +1,51 @@
+
+.sa-singleAddress-grid {
+   display:grid;
+   grid-template-columns: 47% 47%; 
+   grid-column-gap:3%;
+   grid-row-gap:2rem;
+   margin-bottom:2rem;
+}
+.sa-singleAddress-flex{
+   display:flex;
+   flex-direction: column;
+   
+}
+.sa-radio {
+   margin-top:.5rem;
+   margin-right:.8rem !important;
+   transform: scale(1.5);
+}
+.sa-singleAddress-grid > :nth-child(odd) {
+    border-right: 2px solid rgb(192, 191, 191);
+  }
+  .sa-right-btns{
+    width:180px;
+    padding:.9rem 1rem;
+    background:black;
+    color:white;
+    border:none;
+    border-radius:10px;
+    display:block;
+    margin:1rem auto;
+    font-size: .9rem;
+ }
+ .sa-right-btns:hover{
+    background:blue; 
+ }
+
+ @media screen and (max-width:600px) {
+   .sa-right-btns{
+      width:150px;
+      padding:.7rem .8rem;;
+      font-size: .7rem;
+   }
+   
+ } 
+ @media screen and (max-width:500px) {
+   .sa-radio {
+      margin-top:.35rem;
+      margin-right:.5rem !important;
+      transform: scale(1.1);
+   }
+ }

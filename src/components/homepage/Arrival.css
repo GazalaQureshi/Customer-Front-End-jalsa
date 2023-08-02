@@ -1,0 +1,52 @@
+.arrival-text {
+    font-size: 2rem;
+}
+
+.arr-vbtn {
+    padding:.8rem 2rem;
+    align-self: center;
+    width:160px;
+
+    font-size:1rem;
+    border-radius:10px;
+    border:none;
+    font-weight:bold; 
+    background-color:black;
+    color:white;
+}
+.arr-vbtn:hover{
+    background-color:rgb(218, 210, 214) ;
+    transition: all .3s linear;
+    color:black;
+}
+@media screen and (max-width:992px) {
+    .arrival-text {
+        font-size: 1.5rem;
+    }
+    .arr-vbtn {
+        padding:.8rem 1rem;
+        width:140px;
+        font-size:1rem;
+    }
+}
+@media screen and (max-width:650px) {
+    .arrival-text {
+        font-size: .8rem;
+    }
+    .arr-vbtn {
+        padding:.3rem .5rem;
+        width:70px;
+        font-size:.6rem;
+        border-radius: 5px;
+    }
+}
+.arr-img1 {
+    height:100%;
+}
+
+.arr-img2 {
+    height:100%;
+}
+.arr-img3 {
+    height:50%;
+}

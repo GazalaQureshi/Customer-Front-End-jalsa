@@ -1,0 +1,14 @@
+.sorder-right-btns{  
+    width:170px;
+    padding:.9rem 1rem;
+    background:black;
+    color:white;
+    border:none;
+    border-radius:10px;
+    display:block;
+    margin:1.5rem auto;
+    font-size: 1rem;
+ }
+ .sorder-right-btns:hover{
+    background:blue;
+ }

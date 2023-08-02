@@ -1,0 +1,27 @@
+.mens-main {
+    display:flex;
+    justify-content: space-between; 
+ margin-top:3rem;
+} 
+
+.aside{
+    
+    width:22%;
+    text-align: left;
+    padding-left:3rem; 
+}
+
+.main-section {
+    width:72%;
+    text-align:center;
+}
+@media screen and (max-width:768px) {
+    .aside {
+        display:none;
+    }
+    .main-section{
+        width:100%;
+        margin-left:1rem;
+        margin-right: 1rem;
+    }
+}

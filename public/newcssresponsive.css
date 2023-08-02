@@ -1,0 +1,475 @@
+@media screen and (min-width: 0px) and (max-width: 420px) {
+  img.hp-trend-img.rend-imf {
+    width: 140px !important;
+    height: 200px !important;
+  }
+
+  .hp-trend-div.rend-imf {
+    width: 139px !important;
+    margin: auto;
+  }
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 630px) {
+  .hp-trend-div.rend-imf {
+    width: 208px !important;
+  }
+
+  .hp-trend-img {
+    height: 290px !important;
+    width: 210px !important;
+  }
+
+  .editor-content {
+    margin-top: -35px;
+  }
+
+  h1.edti.editor-ctnt-h1 {
+    font-size: 25px;
+  }
+
+  h2.edt.editor-ctnt-h1 {
+    font-size: 18px;
+  }
+
+  button.shop-now.editor-ctnt-btn {
+    padding: 0;
+    width: 95px;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+  /* slider part start */
+
+  .txt-part-slider {
+    bottom: 3.5rem !important;
+  }
+
+  h1.hp-main-title.heading-for-slider-mb {
+    font-size: 17px !important;
+  }
+
+  p.hp-main-subtitle.para-for-slider-mb {
+    font-size: 10px !important;
+  }
+
+  button.hp-shop.btn-for-slider-mb {
+    width: 55px !important;
+    height: 20px !important;
+    font-size: 8px !important;
+    padding: 0 !important;
+    border-radius: 4px !important;
+  }
+
+  /* slider part end */
+
+  /* shop by trend part start */
+
+  h1.shop-heading-home-page {
+    font-size: 20px !important;
+    width: 70% !important;
+    line-height: 30px !important;
+  }
+
+  .hp-trend-img {
+    height: 225px !important;
+    width: 160px !important;
+  }
+
+  a.shop-btn-home-page {
+    width: 30% !important;
+  }
+
+  button.vbtn {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 75px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  
+
+  .shop-trend-section-home.shp-mb {
+    padding: 0 15px !important;
+  }
+ 
+  h1.shop-trend-image-heading {
+    font-size: 18px !important;
+    /* height: 45px; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  h2.shop-trend-image-heading-2 {
+    font-size: 16px;
+  }
+
+  img.hp-trend-img.rend-imf {
+    width: 190px;
+    height: 260px;
+  }
+
+  .hp-trend-div.rend-imf {
+    width: 160px;
+    margin: auto;
+  }
+
+  img.f-img.image-mb {
+    height: 70px;
+  }
+
+  h1.recommend-home-page {
+    font-size: 18px !important;
+  }
+
+  h2.jisa {
+    font-size: 14px !important;
+  }
+
+  .editor-content {
+    margin-top: -50px;
+    padding-left: 5px !important;
+  }
+
+  h1.edti.editor-ctnt-h1 {
+    font-size: 20px;
+  }
+
+  h2.edt.editor-ctnt-h1 {
+    font-size: 15px;
+  }
+
+  button.shop-now.editor-ctnt-btn {
+    padding: 0;
+    width: 82px;
+    border-radius: 8px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+
+  /* slider part start */
+
+  .txt-part-slider {
+    bottom: 4.5rem !important;
+  }
+
+  h1.hp-main-title.heading-for-slider-mb {
+    font-size: 32px !important;
+  }
+
+  p.hp-main-subtitle.para-for-slider-mb {
+    font-size: 15px !important;
+  }
+
+  button.hp-shop.btn-for-slider-mb {
+    width: 80px !important;
+    height: 34px !important;
+    font-size: 12px !important;
+    padding: 0 !important;
+    border-radius: 4px !important;
+  }
+
+  /* slider part end */
+  /* shop by trend part start */
+  h1.shop-heading-home-page {
+    font-size: 23px !important;
+    line-height: 30px !important;
+  }
+
+  img.f-img.image-mb {
+    height: 125px;
+  }
+
+  h1.shop-trend-image-heading {
+    font-size: 23px !important;
+  }
+
+  h2.shop-trend-image-heading-2 {
+    font-size: 20px;
+  }
+
+  button.vbtn {
+    width: 95px;
+    height: 40px;
+    padding: 0;
+    font-size: 13px;
+  }
+
+  h1.recommend-home-page {
+    font-size: 20px !important;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+
+  /* slider part start */
+
+  .txt-part-slider {
+    bottom: 5rem !important;
+  }
+
+  h1.hp-main-title.heading-for-slider-mb {
+    font-size: 55px !important;
+  }
+
+  p.hp-main-subtitle.para-for-slider-mb {
+    font-size: 25px !important;
+  }
+
+  button.hp-shop.btn-for-slider-mb {
+    width: 110px !important;
+    height: 40px !important;
+    font-size: 15px !important;
+    padding: 0 !important;
+    border-radius: 4px !important;
+  }
+
+  /* slider part end */
+  /* shop by trend part start */
+
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+  .header-top {
+    display: none !important;
+  }
+
+  .header-link-part {
+    display: block !important;
+    margin-top: -40px;
+    background:black;
+    color: white;
+    width: 100%;
+    right: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s linear;
+  }
+  .overhidden {
+    overflow: hidden;
+  }
+  .hm-input-search {
+    display: none !important;
+  }
+
+  .header-middle-2 {
+    position: absolute;
+  }
+
+  ul.header-middle-icons.header-middle-icons-for-mb {
+    padding: 0 !important;
+  }
+
+  li.head-icons-5 {
+    display: block !important;
+  }
+
+  li.head-icons-1,
+  li.head-icons-3 {
+    display: none !important;
+  }
+
+  .header-middle.header-middle-section {
+    justify-content: space-between;
+  }
+
+  .header-middle-1.header-middle-head-logo {
+    margin: auto;
+  }
+
+  li.head-icons-6 {
+    display: block !important;
+  }
+
+  img.header-middle-logo.logo-mb {
+    margin-left: 8rem;
+    width: 128px;
+    margin-top: 8px;
+  }
+
+  li.head-icons-2,
+  li.head-icons-4,
+  /* li.head-icons-5, */
+  li.head-icons-6 {
+    font-size: 22px;
+  }
+
+  .header-middle.header-middle-section {
+    line-height: 35px;
+    height: 25px;
+  }
+
+  ul.header-bottom.header-links {
+    display: block;
+  }
+
+  .header-bottom-nonactive {
+    color: white !important;
+  }
+
+  .only-mobile-nav-mbsr {
+    display: block !important;
+  }
+
+
+  /* slider css part */
+
+  img.slider-images-for-mb {
+    height: unset !important;
+  }
+
+  h1.hp-main-title.heading-for-slider-mb {
+    font-size: 10px;
+  }
+
+  p.hp-main-subtitle.para-for-slider-mb {
+    font-size: 7px;
+  }
+
+  button.hp-shop.btn-for-slider-mb {
+    width: 40px;
+    height: 15px;
+    font-size: 5px;
+    padding: 0;
+    border-radius: 4px;
+  }
+
+  .txt-part-slider {
+    text-align: center;
+    /* margin-left: 80px !important; */
+  }
+
+  .react-slideshow-container .nav:last-of-type {
+    right: 15px !important;
+
+  }
+
+  .react-slideshow-container .nav:first-of-type {
+    left: 15px !important;
+  }
+
+  .react-slideshow-container .default-nav {
+    height: 30px !important;
+    background: rgba(202, 195, 195, 0.6) !important;
+    width: 30px !important;
+    border-radius: 0 !important;
+    border: 0;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  img.hp-trend-img {
+    width: 230px;
+    height: 340px;
+  }
+
+  .hp-trend-div.rend-imf {
+    width: 228px !important;
+  }
+
+  h1.shop-heading-home-page {
+    font-size: 38px !important;
+    line-height: 50px !important;
+  }
+
+  h1.shop-trend-image-heading {
+    font-size: 25px !important;
+    margin-top: 15px !important;
+  }
+
+  h2.shop-trend-image-heading-2 {
+    font-size: 20px;
+  }
+
+  h1.recommend-home-page {
+    font-size: 22px !important;
+  }
+
+  .editor-content {
+    margin-top: -60px;
+  }
+
+  h1.edti.editor-ctnt-h1 {
+    font-size: 22px;
+  }
+
+  h2.edt.editor-ctnt-h1 {
+    font-size: 18px;
+  }
+
+  button.shop-now.editor-ctnt-btn {
+    padding: 0;
+    width: 85px;
+    border-radius: 8px;
+    height: 33px;
+    font-size: 11px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .editor-content {
+    margin-top: -70px;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 99999px) {
+
+
+  .react-slideshow-container .nav:last-of-type {
+    right: 35px !important;
+
+  }
+
+  .react-slideshow-container .nav:first-of-type {
+    left: 35px !important;
+  }
+
+  .react-slideshow-container .default-nav {
+    height: 50px !important;
+    background: rgba(202, 195, 195, 0.6) !important;
+    width: 50px !important;
+    border-radius: 0 !important;
+    border: 0;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+}

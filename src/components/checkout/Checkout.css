@@ -1,0 +1,311 @@
+.ck-titles{
+    font-size:1.3rem;
+}
+
+.ck-apply{
+    
+    height:35px;
+    padding:.5rem 1rem;
+    margin-left:1rem;
+    font-size:1rem;  
+
+    background-color: transparent;
+    border:1px solid rgb(85, 84, 84);
+    border-radius:5px;
+    font-weight:bold;
+}
+.ck-apply:hover {
+    background:blue;
+    color:white;
+}
+.ck-top2-cart {
+    font-size:1.5rem;
+}
+.ck-top2-paybtn {
+    padding:1rem 1.5rem;
+    width:250px;
+    font-size:1rem;
+    background:black;
+    color:white;
+    border:none;
+    border-radius:10px;
+    margin:1rem auto;
+    display:flex;
+    align-content: center;
+    text-align: center;
+}
+.ck-top2-paybtn:hover {
+    background:blue;
+}
+.ck-top2-p{
+    font-size:1.1rem;
+}
+/* input.ck-bottom-radiobtn{
+    width:20px;
+} */
+.ck-shipping{
+  font-size: 1rem;
+}
+.ck-radiobtn {
+    width:20px;
+    height:20px;
+    margin-left:0;
+    margin-top: .3rem;
+    margin-right: .5rem;
+    
+}
+  .ck-name {
+    font-size:1rem;
+  }
+  .ck-input {
+    width: 100%;
+    height:40px;
+    border: 1px solid rgb(200, 194, 194); 
+    border-radius:5px;
+    font-size: .8rem;
+    padding-left: .8rem;
+    box-sizing: border-box;
+    outline:none;
+  }
+  .ck-top2-totals {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    font-size: 1.4rem;
+  }
+  .ck-top2-img{
+    height:120px;
+    width:85px;
+  }
+ .ck-top2-info {
+    margin-top:.2rem;
+     color:grey;
+     font-size:1rem;
+ }
+ .ck-bottm-p{
+    margin-top:.1rem;
+    margin-bottom:.3rem;
+    margin-left:2rem;
+    font-size:1rem;
+ }
+.ck-box {
+    padding: .5rem .8rem;
+}
+
+.selected-shipping  {
+  
+  background-color: rgb(240, 238, 238);
+  transform: scale(1.02);
+}
+
+
+
+/* **************VALIDATION ERROR *************************** */
+
+.validation-error{
+  color:red;
+  font-size: .9rem;
+}
+
+
+
+@media screen and (max-width:1200px) {
+
+.ck-input {
+    height:40px;
+    /* font-size: .8rem; */
+    padding-left: .8rem;
+  }
+  .ck-top2-title {
+    font-size:.9rem;
+}
+.ck-top2-img{
+    height:100px;
+    width:75px;
+  }
+.ck-top2-p{
+    font-size: .9rem;
+}
+
+.ck-top2-info {
+    margin-top:.2rem;
+     color:grey;
+     font-size:.8rem;
+ }
+ .ck-top2-totals {
+    font-size: 1.1rem;
+
+  }
+  .ck-top2-paybtn {
+    padding:1rem 1.5rem;
+    width:210px;
+    font-size:.8rem;
+}
+.validation-error{
+    font-size: .8rem;
+}
+
+}
+@media screen and (max-width:992px) {
+  .ck-top2-totals {
+    font-size: 1.1rem;
+    width:50%;
+    margin:0 auto;
+
+  }
+  .ck-summary{
+    font-size:1.4rem;
+  }
+  .ck-summary-total {
+    font-size: 1.6rem;
+  }
+  .ck-summary-arrow{
+    font-size: 1.6rem;
+    position: absolute;
+    top:.2rem;
+    left:15.5rem;
+
+  }
+  .ck-top2-p{
+    font-size: 1.2rem;
+}
+.ck-titles{
+  font-size: 1.2rem;
+}
+.ck-apply{
+  height:36px;
+}
+.ck-top2-img{
+  height:140px;
+  min-width:90px;
+
+}
+.ck-top2-title {
+  font-size:1.2rem;
+}
+.ck-top2-info {
+  margin-top:.4rem;
+   color:grey;
+   font-size:1rem;
+}
+}
+
+
+@media screen and (max-width:650px) {
+    .ck-name {
+        font-size:1rem;
+      }
+      .ck-input {
+        height:35px;
+        font-size: .75rem;
+        padding-left: .6rem;
+      }
+      .ck-bottm-p{
+        margin-top:.1rem;
+        margin-bottom:.3rem;
+        margin-left:1.3rem;
+        font-size:.7rem;
+     }
+     .ck-radiobtn {
+        width:15px;
+        height:15px;
+        margin-left:0;
+        margin-top:.4rem;
+        margin-right: .3rem;
+        
+    }
+    .ck-box {
+        padding: .3rem .5rem;
+    }
+    .ck-apply{
+      height:30px;
+      padding:.1rem .8rem;
+      margin-left:.8rem;
+      font-size:.7rem;
+  }
+  .ck-top2-p{
+    font-size:.8rem;
+    margin-top:0.3rem !important;
+}
+.ck-top2-totals {
+  font-size: .9rem;
+}
+.ck-top2-cart {
+  width:70%;
+  margin:0;
+}
+.ck-top2-img{
+  height:100px;
+  min-width:70px;
+}
+.ck-top2-title {
+  font-size:.7rem;
+}
+.ck-top2-info {
+  margin-top:.2rem;
+   color:grey;
+   font-size:.6rem;
+}
+.validation-error{
+  font-size: .7rem;
+}
+
+
+}
+
+@media screen and (max-width:500px) {
+    .ck-name {
+        font-size:.7rem;
+      }
+      .ck-input {
+        height:30px;
+        font-size: .6rem;
+        padding-left: .4rem;
+      }
+      .ck-titles{
+        font-size:1rem;
+    }
+    .ck-shipping{
+      font-size:.8rem;}
+    .ck-input-postal {
+        margin-bottom: 0rem !important;
+    }
+    .ck-top2-cart {
+      width:100%;
+      padding: 0 !important;
+    }
+    .ck-radiobtn {
+        width:12px;
+        height:12px;
+        margin-left:0;
+        margin-top: .25rem;
+       margin-right:.2rem;
+        
+    }
+    .ck-top2-totals {
+      font-size: .7rem;
+    }
+    .ck-bottm-p{
+      margin-top:0rem;
+      margin-bottom:.3rem;
+      margin-left:1.3rem;
+      font-size:.6rem;
+   }
+   .ck-summary{
+    font-size:1rem;
+  }
+  .ck-summary-total {
+    font-size: 1.2rem;
+  }
+  .ck-summary-arrow{
+    font-size: 1.6rem;
+    position: absolute;
+    top:-.2rem;
+    left:11rem;
+
+  }
+  .validation-error{
+    font-size: .6rem;
+}
+
+}
